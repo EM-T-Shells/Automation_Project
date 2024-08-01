@@ -7,6 +7,7 @@ Feature: Login
 		Given The user navigates to the landing page
 		When The user enters username "<Valid Username>"
 		When The user enters password "<Valid Password>"
+		When The user clicks the login button
 		Then The user should be logged in successfully and redirected to homepage
 
 	Examples: 
