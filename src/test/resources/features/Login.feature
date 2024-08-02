@@ -40,11 +40,11 @@ Feature: Login
 
 	@REV-TC-14 @JREQ-REV-20
 	Scenario Outline: Negative scenario empty username
-		Given an empty username and valid password, a user should not be able to log into the Planetarium
-		Given The user is on the login page
-		When The user enters an "<Empty Username>"
-		When The user enters a "<Valid Password>"
-		Then The user should be informed that the login failed
+		Given The user navigates to the landing page
+		When The user enters username "<Empty Username>"
+		When The user enters password "<Valid Password>"
+		When The user clicks the login button
+		Then The user should be informed the login failed
 
 		Examples:
 			| Empty username | Valid Password |

@@ -29,9 +29,19 @@ public class LoginSteps {
         TestRunner.loginPage.sendUsername(invalidUsername);
     }
 
-    @When("The user enters an invalid password {string}")
+    @When("The user enters invalid password {string}")
     public void the_user_enters_invalid_password(String invalidPassword) {
         TestRunner.loginPage.sendPassword(invalidPassword);
+    }
+    
+    @When("The user enters empty username {string}")
+    public void the_user_enters_empty_username(String emptyUsername) {
+        TestRunner.loginPage.sendUsername(emptyUsername);
+    }
+ 
+    @When("The user enters empty password {string}")
+    public void the_user_enters_empty_password(String emptyPassword) {
+        TestRunner.loginPage.sendPassword(emptyPassword);
     }
 
     @When("The user clicks the login button")
