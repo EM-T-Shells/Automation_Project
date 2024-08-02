@@ -11,12 +11,13 @@ public class LoginPage {
     private WebDriver driver;
     private String url = "http://localhost:8080"; 
 
+    public WebDriverWait wait;
+
     @FindBy(id = "usernameInput")
     WebElement usernameInput;
 
     @FindBy(id = "passwordInput")
     WebElement passwordInput;
-
     
     @FindBy(xpath = "/html/body/div/form/input[3]")
     WebElement loginButton;    
@@ -28,8 +29,7 @@ public class LoginPage {
         this.driver = driver;
 
         //added WebDriverWait to prevent "cannot locate element" error
-        new WebDriverWait(driver, Duration.ofSeconds(2));
-
+        wait = new WebDriverWait(driver, Duration.ofSeconds(2));
         PageFactory.initElements(driver, this);
     }
 
