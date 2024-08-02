@@ -5,11 +5,10 @@ import org.junit.Assert;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import io.cucumber.java.an.E;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import junit.framework.Test;
+
 
 public class LoginSteps {
     @Given("The user navigates to the landing page")
@@ -54,14 +53,23 @@ public class LoginSteps {
 
     @Then("The user should be logged in successfully and redirected to homepage")
     public void the_user_should_be_logged_in_successfully_and_redirected_to_homepage() {
+        TestRunner.loginPage.wait.until(ExpectedConditions.titleIs("Home"));
         Assert.assertEquals("Home", TestRunner.driver.getTitle());
     }
 
-    @Then("The user should be informed the login failed")
+    @Then("The user should be informed that the login failed")
     public void the_user_should_be_informed_the_login_failed(){
         TestRunner.loginPage.wait.until(ExpectedConditions.alertIsPresent());
         Alert alert = TestRunner.driver.switchTo().alert(); 
         Assert.assertEquals("login attempt failed: please try again", alert.getText());
         alert.accept();
-    }   
+    }
+
+    @Given("The user is logged in to the planetarium")
+    public void the_user_is_logged_in_to_the_planetarium() {
+        the_user_navigates_to_the_landing_page();
+        the_user_enters_username("Yelan");
+        the_user_enters_a_password("Aqua Simulacra");
+        the_user_clicks_the_login_button();
+    }
 }
