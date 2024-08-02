@@ -39,10 +39,18 @@ public class LoginSteps {
         TestRunner.loginPage.sendUsername(emptyUsername);
     }
  
+
+
+
+
     @When("The user enters empty password {string}")
     public void the_user_enters_empty_password(String emptyPassword) {
         TestRunner.loginPage.sendPassword(emptyPassword);
     }
+
+    
+
+
 
     @When("The user clicks the login button")
     public void the_user_clicks_the_login_button() {
