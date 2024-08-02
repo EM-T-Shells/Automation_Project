@@ -5,11 +5,10 @@ import org.junit.Assert;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import io.cucumber.java.an.E;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import junit.framework.Test;
+
 
 public class LoginSteps {
     @Given("The user navigates to the landing page")
@@ -57,7 +56,7 @@ public class LoginSteps {
         Assert.assertEquals("Home", TestRunner.driver.getTitle());
     }
 
-    @Then("The user should be informed the login failed")
+    @Then("The user should be informed that the login failed")
     public void the_user_should_be_informed_the_login_failed(){
         TestRunner.loginPage.wait.until(ExpectedConditions.alertIsPresent());
         Alert alert = TestRunner.driver.switchTo().alert(); 
