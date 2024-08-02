@@ -2,6 +2,7 @@ package com.revature.step;
 
 import com.revature.TestRunner;
 import org.junit.Assert;
+import org.openqa.selenium.Alert;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -14,13 +15,23 @@ public class LoginSteps {
     }
 
     @When("The user enters username {string}")
-    public void the_user_enters_a_username(String username) {
+    public void the_user_enters_username(String username) {
         TestRunner.loginPage.sendUsername(username);
+    }
+
+    @When("The user enters invalid username {string}")
+    public void the_user_enters_invalidUsername(String invalidUsername) {
+        TestRunner.loginPage.sendUsername(invalidUsername);
     }
 
     @When("The user enters password {string}")
     public void the_user_enters_a_password(String password) {
         TestRunner.loginPage.sendPassword(password);
+    }
+
+    @When("The user enters an invalid password {string}")
+    public void the_user_enters_an_password(String invalidPassword) {
+        TestRunner.loginPage.sendPassword(invalidPassword);
     }
 
     @When("The user clicks the login button")
@@ -32,4 +43,14 @@ public class LoginSteps {
     public void the_user_should_be_logged_in_successfully_and_redirected_to_homepage() {
         Assert.assertEquals("Home", TestRunner.driver.getTitle());
     }
+
+    @Then("The user should be informed the login failed")
+    public void the_user_should_be_informed_the_login_failed(){
+        Alert alert = TestRunner.driver.switchTo().alert(); // swithces to alert box
+        Assert.assertEquals("login attempt failed: please try again", alert.getText());
+        alert.accept(); // closes alert box
+    }
+
+    
+    
 }

@@ -16,16 +16,15 @@ Feature: Login
 
 	@REV-TC-12 @JREQ-REV-18
 	Scenario Outline: Negative Scenario Invalid password
-	Given a valid username and invalid password, a user should not be able to log into the Planetarium
-		Given The user is on the login page
-		When The user enters a username  "<Valid Username>"
-		When The user enters a password "<Invalid Password>"
+		Given The user navigates to the landing page
+		When The user enters username "<Valid Username>"
+		When The user enters password "<Invalid Password>"
 		When The user clicks the login button
-		Then The user should be informed that the login failed
+		Then The user should be informed the login failed
 
 	Examples: 
-		| InvalidPassword | Valid Username |
-		| Galaxy@2023     | CarlSagan      |
+		| Valid Username | Invalid Password |
+		|  CarlSagan     | Galaxy@2023    |
 
 	@REV-TC-13 @JREQ-REV-19
 	Scenario Outline: Negative Scenario Invalid username
