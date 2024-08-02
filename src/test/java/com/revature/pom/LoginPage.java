@@ -4,11 +4,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import java.time.Duration;
 
 public class LoginPage {
     private WebDriver driver;
-
-    private String url = "localhost:8080";
+    private String url = "http://localhost:8080"; 
 
     @FindBy(id = "usernameInput")
     WebElement usernameInput;
@@ -16,14 +17,19 @@ public class LoginPage {
     @FindBy(id = "passwordInput")
     WebElement passwordInput;
 
+    
     @FindBy(xpath = "/html/body/div/form/input[3]")
-    WebElement loginButton;
+    WebElement loginButton;    
 
     @FindBy(xpath = "/html/body/div/form/a")
     WebElement createAccountLink;
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;
+
+        //added WebDriverWait to prevent "cannot locate element" error
+        new WebDriverWait(driver, Duration.ofSeconds(2));
+
         PageFactory.initElements(driver, this);
     }
 
@@ -46,5 +52,4 @@ public class LoginPage {
     public void clickCreateAccount() {
         createAccountLink.click();
     }
-
 }
