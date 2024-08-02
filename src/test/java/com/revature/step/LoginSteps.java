@@ -19,18 +19,18 @@ public class LoginSteps {
         TestRunner.loginPage.sendUsername(username);
     }
 
-    @When("The user enters invalid username {string}")
-    public void the_user_enters_invalidUsername(String invalidUsername) {
-        TestRunner.loginPage.sendUsername(invalidUsername);
-    }
-
     @When("The user enters password {string}")
     public void the_user_enters_a_password(String password) {
         TestRunner.loginPage.sendPassword(password);
     }
 
+    @When("The user enters invalid username {string}")
+    public void the_user_enters_invalid_username(String invalidUsername) {
+        TestRunner.loginPage.sendUsername(invalidUsername);
+    }
+
     @When("The user enters an invalid password {string}")
-    public void the_user_enters_an_password(String invalidPassword) {
+    public void the_user_enters_invalid_password(String invalidPassword) {
         TestRunner.loginPage.sendPassword(invalidPassword);
     }
 
@@ -46,9 +46,9 @@ public class LoginSteps {
 
     @Then("The user should be informed the login failed")
     public void the_user_should_be_informed_the_login_failed(){
-        Alert alert = TestRunner.driver.switchTo().alert(); // swithces to alert box
+        Alert alert = TestRunner.driver.switchTo().alert(); 
         Assert.assertEquals("login attempt failed: please try again", alert.getText());
-        alert.accept(); // closes alert box
+        alert.accept();
     }
 
     
