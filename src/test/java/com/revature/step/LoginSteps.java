@@ -3,10 +3,13 @@ package com.revature.step;
 import com.revature.TestRunner;
 import org.junit.Assert;
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import io.cucumber.java.an.E;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import junit.framework.Test;
 
 public class LoginSteps {
     @Given("The user navigates to the landing page")
@@ -38,19 +41,11 @@ public class LoginSteps {
     public void the_user_enters_empty_username(String emptyUsername) {
         TestRunner.loginPage.sendUsername(emptyUsername);
     }
- 
-
-
-
 
     @When("The user enters empty password {string}")
     public void the_user_enters_empty_password(String emptyPassword) {
         TestRunner.loginPage.sendPassword(emptyPassword);
     }
-
-    
-
-
 
     @When("The user clicks the login button")
     public void the_user_clicks_the_login_button() {
@@ -64,11 +59,9 @@ public class LoginSteps {
 
     @Then("The user should be informed the login failed")
     public void the_user_should_be_informed_the_login_failed(){
+        TestRunner.loginPage.wait.until(ExpectedConditions.alertIsPresent());
         Alert alert = TestRunner.driver.switchTo().alert(); 
         Assert.assertEquals("login attempt failed: please try again", alert.getText());
         alert.accept();
-    }
-
-    
-    
+    }   
 }
