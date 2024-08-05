@@ -25,6 +25,7 @@ public class ViewCelestialBodiesSteps {
     
     @Given("The user is not logged in")
     public void the_user_is_not_logged_in() {
+        TestRunner.homePage.clickLogout();
         TestRunner.driver.navigate().to("http://localhost:8080/planetarium");
     }
 
