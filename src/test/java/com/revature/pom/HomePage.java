@@ -11,10 +11,10 @@ import java.time.Duration;
 import java.util.List;
 
 public class HomePage {
-    private final WebDriver driver;
+    public final WebDriver driver;
 
     private final String url = "http:/localhost:8080/planetarium";
-    private final WebDriverWait wait;
+    public final WebDriverWait wait;
 
     @FindBy(id = "tableId")
     private WebElement table;
@@ -48,6 +48,9 @@ public class HomePage {
 
     @FindBy(xpath = "//html//body//div[1]//div[2]//button")
     private WebElement submitButton;
+
+    @FindBy(xpath = "/html/body/button")
+    private WebElement logoutButton;
 
     public HomePage(WebDriver driver) {
         this.driver = driver;
@@ -106,4 +109,9 @@ public class HomePage {
     public void clickSubmit() {
         submitButton.click();
     }
+
+    public void clickLogout() {
+        logoutButton.click();
+    }
+
 }
