@@ -48,6 +48,9 @@ public class HomePage {
     @FindBy(id = "celestialTable")
     private WebElement table;
 
+    @FindBy(xpath = "/html/body/button")
+    private WebElement logoutButton;
+
     public HomePage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
@@ -112,5 +115,9 @@ public class HomePage {
 
     public void clickSubmit() {
         submitButton.click();
+    }
+
+    public void clickLogout() {
+        logoutButton.click();
     }
 }
