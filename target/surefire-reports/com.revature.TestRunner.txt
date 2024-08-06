@@ -1,0 +1,54 @@
+-------------------------------------------------------------------------------
+Test set: com.revature.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 4.123 s <<< FAILURE! -- in com.revature.TestRunner
+ViewCelestialBodies.Positive scenario view celestial bodies -- Time elapsed: 0.029 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step "a valid username and password, a user should be able to view planets and moons" is undefined. You can implement it using the snippet(s) below:
+
+@Given("a valid username and password, a user should be able to view planets and moons")
+public void a_valid_username_and_password_a_user_should_be_able_to_view_planets_and_moons() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@Given("The user is logged in")
+public void the_user_is_logged_in() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("The user should view celestial bodies page")
+public void the_user_should_view_celestial_bodies_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+ViewCelestialBodies.Negative Scenario unauthenticated user -- Time elapsed: 0.004 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step "an unauthenticated user, attempting to view celestial bodies should prompt for login." is undefined. You can implement it using the snippet(s) below:
+
+@Given("an unauthenticated user, attempting to view celestial bodies should prompt for login.")
+public void an_unauthenticated_user_attempting_to_view_celestial_bodies_should_prompt_for_login() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@Given("The user is not logged in")
+public void the_user_is_not_logged_in() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("The user should not view celestial bodies page")
+public void the_user_should_not_view_celestial_bodies_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
