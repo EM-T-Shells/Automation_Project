@@ -29,7 +29,7 @@ Feature: Registration
 
 		Examples:
 			| valid password | Non-unique username |
-			| CosmosNoNums   | Galileo             |
+			| Cosmos@2024    | Galileo             |
 
 	@REV-TC-4 @JREQ-REV-6
 	Scenario Outline: Negative scenario username too long
@@ -43,11 +43,11 @@ Feature: Registration
 
 		Examples:
 			| Too long username                        | valid password |
-			| CarlSagan_with_a_really_really_long_name | CosmosNoNums   |
+			| CarlSagan_with_a_really_really_long_name | Cosmos@2024    |
 
 	@REV-TC-5 @JREQ-REV-7
 	Scenario Outline: Negative Scenario password too long
-	Password > 30 characters
+	Password greater than 30 characters
 		Given The user navigates to the landing page
 		When The user clicks Create Account link and is redirected to the registration page
 		When The user provides a valid username "<Valid Username>"
@@ -61,7 +61,7 @@ Feature: Registration
 
 	@REV-TC-6 @JREQ-REV-8
 	Scenario Outline: Negative Scenario credentials too long
-	Both username and password > 30 characters each
+	Both username and password greater than 30 characters each
 		Given The user navigates to the landing page
 		When The user clicks Create Account link and is redirected to the registration page
 		When The user provides a too long username "<Too long username>"
@@ -85,7 +85,7 @@ Feature: Registration
 
 		Examples:
 			| valid password |
-			| CosmosNoNums   |
+			| Cosmos@2024    |
 
 	@REV-TC-8 @JREQ-REV-10
 	Scenario Outline: Negative scenario empty password
@@ -104,7 +104,7 @@ Feature: Registration
 	@REV-TC-38 @JREQ-REV-11
 	Scenario Outline: Positive Scenario user registration Username length exactly 30 characters
 	Boundary Analysis Username length 30 characters
-	Using a username with exactly 30 characters and valid password, a user should be able to register an account
+	Using a username with exactly 30 characters and valid password a user should be able to register an account
 		Given The user navigates to the landing page
 		When The user clicks Create Account link and is redirected to the registration page
 		When The user provides a username that is exactly thirty characters "<Username 30 characters>"
@@ -116,12 +116,12 @@ Feature: Registration
 
 		Examples:
 			| Username 30 characters         | valid password |
-			| UserWitExactlyThirtyCharacters | CosmosNoNums   |
+			| UserWitExactlyThirtyCharacters | Cosmos@2024    |
 
 	@REV-TC-39 @JREQ-REV-12 @JREQ-REV-81
 	Scenario Outline: Positive Scenario user registration Password length exactly 30 characters
 	Boundary Analysis Password length 30 characters
-	Using a password with exactly 30 characters and valid password, a user should be able to register an account
+	Using a password with exactly 30 characters and valid password a user should be able to register an account
 		Given The user navigates to the landing page
 		When The user clicks Create Account link and is redirected to the registration page
 		When The user provides a valid username "<Valid Username>"

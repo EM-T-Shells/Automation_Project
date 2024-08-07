@@ -3,11 +3,7 @@
     "line": 2,
     "elements": [
       {
-<<<<<<< HEAD
-        "start_timestamp": "2024-08-05T16:08:01.604Z",
-=======
-        "start_timestamp": "2024-08-02T22:43:18.779Z",
->>>>>>> aj
+        "start_timestamp": "2024-08-06T21:10:13.484Z",
         "line": 14,
         "name": "Positive scenario user login",
         "description": "",
@@ -17,11 +13,7 @@
         "steps": [
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 41057200,
-=======
-              "duration": 39057800,
->>>>>>> aj
+              "duration": 34859800,
               "status": "passed"
             },
             "line": 6,
@@ -33,11 +25,7 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 105287100,
-=======
-              "duration": 109238300,
->>>>>>> aj
+              "duration": 128015000,
               "status": "passed"
             },
             "line": 7,
@@ -55,11 +43,7 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 94305200,
-=======
-              "duration": 91225300,
->>>>>>> aj
+              "duration": 92322800,
               "status": "passed"
             },
             "line": 8,
@@ -77,11 +61,7 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 97273600,
-=======
-              "duration": 71681400,
->>>>>>> aj
+              "duration": 80431100,
               "status": "passed"
             },
             "line": 9,
@@ -93,14 +73,9 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 61988000,
-              "status": "passed"
-=======
-              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : login attempt failed: please try again}\n  (Session info: chrome\u003d127.0.6533.89): login attempt failed: please try again\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.23\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [7c99f27d81932810620e449022ed597b, getTitle {}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\\Users\\Admin\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53371}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53371/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 7c99f27d81932810620e449022ed597b\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:307)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$1.apply(ExpectedConditions.java:55)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$1.apply(ExpectedConditions.java:50)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)\r\n\tat com.revature.step.LoginSteps.the_user_should_be_logged_in_successfully_and_redirected_to_homepage(LoginSteps.java:56)\r\n\tat ✽.The user should be logged in successfully and redirected to homepage(classpath:features/Login.feature:10)\r\n",
-              "duration": 37664300,
+              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : login attempt failed: please try again}\n  (Session info: chrome\u003d127.0.6533.89): login attempt failed: please try again\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.23\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [3f8927cd6de6d91cc37a384c16b80b5b, getTitle {}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\\Users\\Admin\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49202}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49202/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 3f8927cd6de6d91cc37a384c16b80b5b\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:307)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$1.apply(ExpectedConditions.java:55)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$1.apply(ExpectedConditions.java:50)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)\r\n\tat com.revature.step.LoginSteps.the_user_should_be_logged_in_successfully_and_redirected_to_homepage(LoginSteps.java:56)\r\n\tat ✽.The user should be logged in successfully and redirected to homepage(classpath:features/Login.feature:10)\r\n",
+              "duration": 35110700,
               "status": "failed"
->>>>>>> aj
             },
             "line": 10,
             "name": "The user should be logged in successfully and redirected to homepage",
@@ -123,11 +98,7 @@
         ]
       },
       {
-<<<<<<< HEAD
-        "start_timestamp": "2024-08-05T16:08:02.071Z",
-=======
-        "start_timestamp": "2024-08-02T22:43:19.203Z",
->>>>>>> aj
+        "start_timestamp": "2024-08-06T21:10:13.948Z",
         "line": 26,
         "name": "Negative Scenario Invalid password",
         "description": "",
@@ -137,11 +108,7 @@
         "steps": [
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 161489000,
-=======
-              "duration": 28699500,
->>>>>>> aj
+              "duration": 25220100,
               "status": "passed"
             },
             "line": 18,
@@ -153,11 +120,7 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 88903300,
-=======
-              "duration": 72130200,
->>>>>>> aj
+              "duration": 76138400,
               "status": "passed"
             },
             "line": 19,
@@ -175,11 +138,7 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 94521700,
-=======
-              "duration": 75305300,
->>>>>>> aj
+              "duration": 76985000,
               "status": "passed"
             },
             "line": 20,
@@ -197,11 +156,7 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 47116700,
-=======
-              "duration": 33547900,
->>>>>>> aj
+              "duration": 38070100,
               "status": "passed"
             },
             "line": 21,
@@ -213,11 +168,7 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 16042400,
-=======
-              "duration": 17870600,
->>>>>>> aj
+              "duration": 51247400,
               "status": "passed"
             },
             "line": 22,
@@ -241,11 +192,7 @@
         ]
       },
       {
-<<<<<<< HEAD
-        "start_timestamp": "2024-08-05T16:08:02.488Z",
-=======
-        "start_timestamp": "2024-08-02T22:43:19.438Z",
->>>>>>> aj
+        "start_timestamp": "2024-08-06T21:10:14.246Z",
         "line": 38,
         "name": "Negative Scenario Invalid username",
         "description": "",
@@ -255,11 +202,7 @@
         "steps": [
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 27096700,
-=======
-              "duration": 24232400,
->>>>>>> aj
+              "duration": 36925700,
               "status": "passed"
             },
             "line": 30,
@@ -271,11 +214,7 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 104814600,
-=======
-              "duration": 67694600,
->>>>>>> aj
+              "duration": 93428200,
               "status": "passed"
             },
             "line": 31,
@@ -293,11 +232,7 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 99968400,
-=======
-              "duration": 51885500,
->>>>>>> aj
+              "duration": 68152500,
               "status": "passed"
             },
             "line": 32,
@@ -315,11 +250,7 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 61591600,
-=======
-              "duration": 30338200,
->>>>>>> aj
+              "duration": 30004500,
               "status": "passed"
             },
             "line": 33,
@@ -331,11 +262,7 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 10662400,
-=======
-              "duration": 17180600,
->>>>>>> aj
+              "duration": 536403900,
               "status": "passed"
             },
             "line": 34,
@@ -359,11 +286,7 @@
         ]
       },
       {
-<<<<<<< HEAD
-        "start_timestamp": "2024-08-05T16:08:02.798Z",
-=======
-        "start_timestamp": "2024-08-02T22:43:19.637Z",
->>>>>>> aj
+        "start_timestamp": "2024-08-06T21:10:15.033Z",
         "line": 50,
         "name": "Negative scenario empty username",
         "description": "",
@@ -373,11 +296,7 @@
         "steps": [
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 23557200,
-=======
-              "duration": 20239100,
->>>>>>> aj
+              "duration": 30134500,
               "status": "passed"
             },
             "line": 42,
@@ -389,11 +308,7 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 53025700,
-=======
-              "duration": 37335500,
->>>>>>> aj
+              "duration": 39005000,
               "status": "passed"
             },
             "line": 43,
@@ -411,11 +326,7 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 102190800,
-=======
-              "duration": 53058600,
->>>>>>> aj
+              "duration": 52143400,
               "status": "passed"
             },
             "line": 44,
@@ -433,11 +344,7 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 45107200,
-=======
-              "duration": 31667800,
->>>>>>> aj
+              "duration": 31093600,
               "status": "passed"
             },
             "line": 45,
@@ -449,11 +356,7 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 14032200,
-=======
-              "duration": 14767600,
->>>>>>> aj
+              "duration": 10641500,
               "status": "passed"
             },
             "line": 46,
@@ -477,11 +380,7 @@
         ]
       },
       {
-<<<<<<< HEAD
-        "start_timestamp": "2024-08-05T16:08:03.044Z",
-=======
-        "start_timestamp": "2024-08-02T22:43:19.799Z",
->>>>>>> aj
+        "start_timestamp": "2024-08-06T21:10:15.207Z",
         "line": 62,
         "name": "Negative scenario empty password",
         "description": "",
@@ -491,11 +390,7 @@
         "steps": [
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 21229800,
-=======
-              "duration": 16717800,
->>>>>>> aj
+              "duration": 19459100,
               "status": "passed"
             },
             "line": 54,
@@ -507,11 +402,7 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 77703300,
-=======
-              "duration": 50118700,
->>>>>>> aj
+              "duration": 56033500,
               "status": "passed"
             },
             "line": 55,
@@ -529,11 +420,7 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 54930100,
-=======
-              "duration": 36876200,
->>>>>>> aj
+              "duration": 37000700,
               "status": "passed"
             },
             "line": 56,
@@ -551,11 +438,7 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 40566500,
-=======
-              "duration": 30788200,
->>>>>>> aj
+              "duration": 28766700,
               "status": "passed"
             },
             "line": 57,
@@ -567,11 +450,7 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 14526500,
-=======
-              "duration": 16264600,
->>>>>>> aj
+              "duration": 528218000,
               "status": "passed"
             },
             "line": 58,
@@ -615,67 +494,29 @@
     "line": 2,
     "elements": [
       {
-<<<<<<< HEAD
-        "start_timestamp": "2024-08-05T16:08:03.259Z",
-        "line": 11,
-        "name": "Positive scenario view celestial bodies",
-        "description": "",
-        "id": "viewcelestialbodies;positive-scenario-view-celestial-bodies;;2",
-=======
-        "start_timestamp": "2024-08-02T22:43:19.955Z",
+        "start_timestamp": "2024-08-06T21:10:15.894Z",
         "line": 18,
         "name": "Positive Scenario user registration",
         "description": "\tNo registered user with username \"CarlSagan\"",
         "id": "registration;positive-scenario-user-registration;;2",
->>>>>>> aj
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 171881500,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "The user is logged in with username \"CarlSagan\" and password \"Cosmos@2024\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"CarlSagan\"",
-                  "offset": 36
-                },
-                {
-                  "val": "\"Cosmos@2024\"",
-                  "offset": 61
-                }
-              ],
-              "location": "com.revature.step.ViewCelestialBodiesSteps.the_user_is_logged_in_with_username_and_password(java.lang.String,java.lang.String)"
-=======
-              "duration": 21666200,
+              "duration": 18986500,
               "status": "passed"
             },
             "line": 7,
             "name": "The user navigates to the landing page",
             "match": {
               "location": "com.revature.step.LoginSteps.the_user_navigates_to_the_landing_page()"
->>>>>>> aj
             },
             "keyword": "Given "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 272907500,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "The user should view celestial bodies page",
-            "match": {
-              "location": "com.revature.step.ViewCelestialBodiesSteps.the_user_should_view_celestial_bodies_page()"
-            },
-=======
-              "duration": 80605800,
+              "duration": 83712100,
               "status": "passed"
             },
             "line": 8,
@@ -687,7 +528,7 @@
           },
           {
             "result": {
-              "duration": 50266700,
+              "duration": 49243500,
               "status": "passed"
             },
             "line": 9,
@@ -705,7 +546,7 @@
           },
           {
             "result": {
-              "duration": 50631800,
+              "duration": 54264400,
               "status": "passed"
             },
             "line": 10,
@@ -723,7 +564,7 @@
           },
           {
             "result": {
-              "duration": 32237100,
+              "duration": 36158300,
               "status": "passed"
             },
             "line": 11,
@@ -735,7 +576,7 @@
           },
           {
             "result": {
-              "duration": 544863700,
+              "duration": 529171000,
               "status": "passed"
             },
             "line": 12,
@@ -757,7 +598,7 @@
           },
           {
             "result": {
-              "duration": 14703500,
+              "duration": 12198100,
               "status": "passed"
             },
             "line": 13,
@@ -769,7 +610,7 @@
           },
           {
             "result": {
-              "duration": 22368700,
+              "duration": 32437200,
               "status": "passed"
             },
             "line": 14,
@@ -793,7 +634,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-02T22:43:20.785Z",
+        "start_timestamp": "2024-08-06T21:10:16.738Z",
         "line": 32,
         "name": "Negative Scenario Username not unique",
         "description": "\tUser should not be able to register with an existing username.",
@@ -803,7 +644,7 @@
         "steps": [
           {
             "result": {
-              "duration": 21865500,
+              "duration": 21913000,
               "status": "passed"
             },
             "line": 23,
@@ -815,7 +656,7 @@
           },
           {
             "result": {
-              "duration": 63649300,
+              "duration": 67038800,
               "status": "passed"
             },
             "line": 24,
@@ -827,7 +668,7 @@
           },
           {
             "result": {
-              "duration": 47919500,
+              "duration": 50457300,
               "status": "passed"
             },
             "line": 25,
@@ -845,15 +686,15 @@
           },
           {
             "result": {
-              "duration": 53020600,
+              "duration": 51227400,
               "status": "passed"
             },
             "line": 26,
-            "name": "The user provides a valid password \"CosmosNoNums\"",
+            "name": "The user provides a valid password \"Cosmos@2024\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"CosmosNoNums\"",
+                  "val": "\"Cosmos@2024\"",
                   "offset": 35
                 }
               ],
@@ -863,7 +704,7 @@
           },
           {
             "result": {
-              "duration": 30630400,
+              "duration": 29784400,
               "status": "passed"
             },
             "line": 27,
@@ -875,11 +716,11 @@
           },
           {
             "result": {
-              "duration": 14367700,
+              "duration": 13519300,
               "status": "passed"
             },
             "line": 28,
-            "name": "The user is alerted that Account creation failed with username \"Galileo\" and password \"CosmosNoNums\"",
+            "name": "The user is alerted that Account creation failed with username \"Galileo\" and password \"Cosmos@2024\"",
             "match": {
               "arguments": [
                 {
@@ -887,7 +728,7 @@
                   "offset": 63
                 },
                 {
-                  "val": "\"CosmosNoNums\"",
+                  "val": "\"Cosmos@2024\"",
                   "offset": 86
                 }
               ],
@@ -909,7 +750,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-02T22:43:21.021Z",
+        "start_timestamp": "2024-08-06T21:10:16.981Z",
         "line": 46,
         "name": "Negative scenario username too long",
         "description": "\tuser cannot register if username is greater than 30 characters",
@@ -919,7 +760,7 @@
         "steps": [
           {
             "result": {
-              "duration": 28678400,
+              "duration": 34186900,
               "status": "passed"
             },
             "line": 37,
@@ -931,7 +772,7 @@
           },
           {
             "result": {
-              "duration": 58569100,
+              "duration": 68388100,
               "status": "passed"
             },
             "line": 38,
@@ -943,7 +784,7 @@
           },
           {
             "result": {
-              "duration": 111933300,
+              "duration": 108972300,
               "status": "passed"
             },
             "line": 39,
@@ -961,15 +802,15 @@
           },
           {
             "result": {
-              "duration": 58473700,
+              "duration": 56168600,
               "status": "passed"
             },
             "line": 40,
-            "name": "The user provides a valid password \"CosmosNoNums\"",
+            "name": "The user provides a valid password \"Cosmos@2024\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"CosmosNoNums\"",
+                  "val": "\"Cosmos@2024\"",
                   "offset": 35
                 }
               ],
@@ -979,7 +820,7 @@
           },
           {
             "result": {
-              "duration": 31406000,
+              "duration": 28799300,
               "status": "passed"
             },
             "line": 41,
@@ -991,11 +832,11 @@
           },
           {
             "result": {
-              "duration": 11254100,
+              "duration": 9814300,
               "status": "passed"
             },
             "line": 42,
-            "name": "The user is alerted that Account creation failed with username \"CarlSagan_with_a_really_really_long_name\" and password \"CosmosNoNums\"",
+            "name": "The user is alerted that Account creation failed with username \"CarlSagan_with_a_really_really_long_name\" and password \"Cosmos@2024\"",
             "match": {
               "arguments": [
                 {
@@ -1003,7 +844,7 @@
                   "offset": 63
                 },
                 {
-                  "val": "\"CosmosNoNums\"",
+                  "val": "\"Cosmos@2024\"",
                   "offset": 119
                 }
               ],
@@ -1025,17 +866,17 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-02T22:43:21.327Z",
+        "start_timestamp": "2024-08-06T21:10:17.295Z",
         "line": 60,
         "name": "Negative Scenario password too long",
-        "description": "\tPassword \u003e 30 characters",
+        "description": "\tPassword greater than 30 characters",
         "id": "registration;negative-scenario-password-too-long;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 27330400,
+              "duration": 23645600,
               "status": "passed"
             },
             "line": 51,
@@ -1047,7 +888,7 @@
           },
           {
             "result": {
-              "duration": 62519000,
+              "duration": 59362800,
               "status": "passed"
             },
             "line": 52,
@@ -1059,7 +900,7 @@
           },
           {
             "result": {
-              "duration": 55888000,
+              "duration": 52675300,
               "status": "passed"
             },
             "line": 53,
@@ -1077,7 +918,7 @@
           },
           {
             "result": {
-              "duration": 123201100,
+              "duration": 144674200,
               "status": "passed"
             },
             "line": 54,
@@ -1095,7 +936,7 @@
           },
           {
             "result": {
-              "duration": 37310000,
+              "duration": 43546400,
               "status": "passed"
             },
             "line": 55,
@@ -1107,7 +948,7 @@
           },
           {
             "result": {
-              "duration": 14719200,
+              "duration": 8417000,
               "status": "passed"
             },
             "line": 56,
@@ -1141,17 +982,17 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-02T22:43:21.654Z",
+        "start_timestamp": "2024-08-06T21:10:17.633Z",
         "line": 74,
         "name": "Negative Scenario credentials too long",
-        "description": "\tBoth username and password \u003e 30 characters each",
+        "description": "\tBoth username and password greater than 30 characters each",
         "id": "registration;negative-scenario-credentials-too-long;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 27961100,
+              "duration": 27669300,
               "status": "passed"
             },
             "line": 65,
@@ -1163,7 +1004,7 @@
           },
           {
             "result": {
-              "duration": 62133000,
+              "duration": 64041600,
               "status": "passed"
             },
             "line": 66,
@@ -1175,7 +1016,7 @@
           },
           {
             "result": {
-              "duration": 101541400,
+              "duration": 114789700,
               "status": "passed"
             },
             "line": 67,
@@ -1193,7 +1034,7 @@
           },
           {
             "result": {
-              "duration": 121775400,
+              "duration": 123446900,
               "status": "passed"
             },
             "line": 68,
@@ -1211,7 +1052,7 @@
           },
           {
             "result": {
-              "duration": 31883900,
+              "duration": 35473900,
               "status": "passed"
             },
             "line": 69,
@@ -1223,7 +1064,7 @@
           },
           {
             "result": {
-              "duration": 14702200,
+              "duration": 11079600,
               "status": "passed"
             },
             "line": 70,
@@ -1257,7 +1098,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-02T22:43:22.019Z",
+        "start_timestamp": "2024-08-06T21:10:18.014Z",
         "line": 88,
         "name": "Negative scenario empty username",
         "description": "\tUser should not be able to register with an empty username field",
@@ -1267,7 +1108,7 @@
         "steps": [
           {
             "result": {
-              "duration": 26390300,
+              "duration": 32215100,
               "status": "passed"
             },
             "line": 79,
@@ -1279,7 +1120,7 @@
           },
           {
             "result": {
-              "duration": 58632400,
+              "duration": 64661200,
               "status": "passed"
             },
             "line": 80,
@@ -1291,7 +1132,7 @@
           },
           {
             "result": {
-              "duration": 38342500,
+              "duration": 43778100,
               "status": "passed"
             },
             "line": 81,
@@ -1303,15 +1144,15 @@
           },
           {
             "result": {
-              "duration": 54374300,
+              "duration": 57682700,
               "status": "passed"
             },
             "line": 82,
-            "name": "The user provides a valid password \"CosmosNoNums\"",
+            "name": "The user provides a valid password \"Cosmos@2024\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"CosmosNoNums\"",
+                  "val": "\"Cosmos@2024\"",
                   "offset": 35
                 }
               ],
@@ -1321,7 +1162,7 @@
           },
           {
             "result": {
-              "duration": 30383300,
+              "duration": 29899200,
               "status": "passed"
             },
             "line": 83,
@@ -1333,11 +1174,11 @@
           },
           {
             "result": {
-              "duration": 15284000,
+              "duration": 12611500,
               "status": "passed"
             },
             "line": 84,
-            "name": "The user is alerted that Account creation failed with username \"\" and password \"CosmosNoNums\"",
+            "name": "The user is alerted that Account creation failed with username \"\" and password \"Cosmos@2024\"",
             "match": {
               "arguments": [
                 {
@@ -1345,7 +1186,7 @@
                   "offset": 63
                 },
                 {
-                  "val": "\"CosmosNoNums\"",
+                  "val": "\"Cosmos@2024\"",
                   "offset": 79
                 }
               ],
@@ -1367,7 +1208,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-02T22:43:22.248Z",
+        "start_timestamp": "2024-08-06T21:10:18.262Z",
         "line": 102,
         "name": "Negative scenario empty password",
         "description": "\tUser should not be able to register with an empty password field",
@@ -1377,7 +1218,7 @@
         "steps": [
           {
             "result": {
-              "duration": 28294600,
+              "duration": 36713200,
               "status": "passed"
             },
             "line": 93,
@@ -1389,7 +1230,7 @@
           },
           {
             "result": {
-              "duration": 60271100,
+              "duration": 71005700,
               "status": "passed"
             },
             "line": 94,
@@ -1401,7 +1242,7 @@
           },
           {
             "result": {
-              "duration": 62647000,
+              "duration": 57379700,
               "status": "passed"
             },
             "line": 95,
@@ -1419,7 +1260,7 @@
           },
           {
             "result": {
-              "duration": 35965600,
+              "duration": 41737800,
               "status": "passed"
             },
             "line": 96,
@@ -1431,7 +1272,7 @@
           },
           {
             "result": {
-              "duration": 32302100,
+              "duration": 30951300,
               "status": "passed"
             },
             "line": 97,
@@ -1443,7 +1284,7 @@
           },
           {
             "result": {
-              "duration": 13249200,
+              "duration": 11186200,
               "status": "passed"
             },
             "line": 98,
@@ -1477,17 +1318,17 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-02T22:43:22.484Z",
+        "start_timestamp": "2024-08-06T21:10:18.517Z",
         "line": 119,
         "name": "Positive Scenario user registration Username length exactly 30 characters",
-        "description": "\tBoundary Analysis Username length 30 characters\n\tUsing a username with exactly 30 characters and valid password, a user should be able to register an account",
+        "description": "\tBoundary Analysis Username length 30 characters\n\tUsing a username with exactly 30 characters and valid password a user should be able to register an account",
         "id": "registration;positive-scenario-user-registration-username-length-exactly-30-characters;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 29235900,
+              "duration": 30898700,
               "status": "passed"
             },
             "line": 108,
@@ -1499,7 +1340,7 @@
           },
           {
             "result": {
-              "duration": 69483500,
+              "duration": 62147500,
               "status": "passed"
             },
             "line": 109,
@@ -1511,7 +1352,7 @@
           },
           {
             "result": {
-              "duration": 94601800,
+              "duration": 98138300,
               "status": "passed"
             },
             "line": 110,
@@ -1529,15 +1370,15 @@
           },
           {
             "result": {
-              "duration": 61716200,
+              "duration": 55317300,
               "status": "passed"
             },
             "line": 111,
-            "name": "The user provides a valid password \"CosmosNoNums\"",
+            "name": "The user provides a valid password \"Cosmos@2024\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"CosmosNoNums\"",
+                  "val": "\"Cosmos@2024\"",
                   "offset": 35
                 }
               ],
@@ -1547,7 +1388,7 @@
           },
           {
             "result": {
-              "duration": 29683900,
+              "duration": 34351700,
               "status": "passed"
             },
             "line": 112,
@@ -1559,11 +1400,11 @@
           },
           {
             "result": {
-              "duration": 522064800,
+              "duration": 528958300,
               "status": "passed"
             },
             "line": 113,
-            "name": "The user is alerted that Account created successfully with username \"UserWitExactlyThirtyCharacters\" and password \"CosmosNoNums\"",
+            "name": "The user is alerted that Account created successfully with username \"UserWitExactlyThirtyCharacters\" and password \"Cosmos@2024\"",
             "match": {
               "arguments": [
                 {
@@ -1571,7 +1412,7 @@
                   "offset": 68
                 },
                 {
-                  "val": "\"CosmosNoNums\"",
+                  "val": "\"Cosmos@2024\"",
                   "offset": 114
                 }
               ],
@@ -1581,7 +1422,7 @@
           },
           {
             "result": {
-              "duration": 6500200,
+              "duration": 12275800,
               "status": "passed"
             },
             "line": 114,
@@ -1593,7 +1434,7 @@
           },
           {
             "result": {
-              "duration": 15571900,
+              "duration": 29582500,
               "status": "passed"
             },
             "line": 115,
@@ -1617,17 +1458,17 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-02T22:43:23.319Z",
+        "start_timestamp": "2024-08-06T21:10:19.377Z",
         "line": 136,
         "name": "Positive Scenario user registration Password length exactly 30 characters",
-        "description": "\tBoundary Analysis Password length 30 characters\n\tUsing a password with exactly 30 characters and valid password, a user should be able to register an account",
+        "description": "\tBoundary Analysis Password length 30 characters\n\tUsing a password with exactly 30 characters and valid password a user should be able to register an account",
         "id": "registration;positive-scenario-user-registration-password-length-exactly-30-characters;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 16897800,
+              "duration": 18177500,
               "status": "passed"
             },
             "line": 125,
@@ -1639,7 +1480,7 @@
           },
           {
             "result": {
-              "duration": 63414700,
+              "duration": 80860700,
               "status": "passed"
             },
             "line": 126,
@@ -1651,7 +1492,7 @@
           },
           {
             "result": {
-              "duration": 62964500,
+              "duration": 78774600,
               "status": "passed"
             },
             "line": 127,
@@ -1669,7 +1510,7 @@
           },
           {
             "result": {
-              "duration": 87669100,
+              "duration": 92581600,
               "status": "passed"
             },
             "line": 128,
@@ -1687,7 +1528,7 @@
           },
           {
             "result": {
-              "duration": 27472400,
+              "duration": 31592600,
               "status": "passed"
             },
             "line": 129,
@@ -1699,7 +1540,7 @@
           },
           {
             "result": {
-              "duration": 521302400,
+              "duration": 530505700,
               "status": "passed"
             },
             "line": 130,
@@ -1721,7 +1562,7 @@
           },
           {
             "result": {
-              "duration": 5678100,
+              "duration": 10285900,
               "status": "passed"
             },
             "line": 131,
@@ -1733,7 +1574,7 @@
           },
           {
             "result": {
-              "duration": 20067500,
+              "duration": 23942700,
               "status": "passed"
             },
             "line": 132,
@@ -1780,41 +1621,46 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-08-02T22:43:24.148Z",
-        "line": 5,
+        "start_timestamp": "2024-08-06T21:10:20.252Z",
+        "line": 11,
         "name": "Positive scenario view celestial bodies",
         "description": "",
-        "id": "viewcelestialbodies;positive-scenario-view-celestial-bodies",
+        "id": "viewcelestialbodies;positive-scenario-view-celestial-bodies;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 179994400,
+              "status": "passed"
             },
             "line": 6,
-            "name": "a valid username and password, a user should be able to view planets and moons",
-            "match": {},
+            "name": "The user is logged in with username \"CarlSagan\" and password \"Cosmos@2024\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CarlSagan\"",
+                  "offset": 36
+                },
+                {
+                  "val": "\"Cosmos@2024\"",
+                  "offset": 61
+                }
+              ],
+              "location": "com.revature.step.ViewCelestialBodiesSteps.the_user_is_logged_in_with_username_and_password(java.lang.String,java.lang.String)"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1002900,
-              "status": "skipped"
+              "duration": 569844100,
+              "status": "passed"
             },
             "line": 7,
-            "name": "The user is logged in",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 8,
             "name": "The user should view celestial bodies page",
-            "match": {},
->>>>>>> aj
+            "match": {
+              "location": "com.revature.step.ViewCelestialBodiesSteps.the_user_should_view_celestial_bodies_page()"
+            },
             "keyword": "Then "
           }
         ],
@@ -1831,13 +1677,8 @@
         ]
       },
       {
-<<<<<<< HEAD
-        "start_timestamp": "2024-08-05T16:08:03.710Z",
+        "start_timestamp": "2024-08-06T21:10:21.008Z",
         "line": 14,
-=======
-        "start_timestamp": "2024-08-02T22:43:24.157Z",
-        "line": 11,
->>>>>>> aj
         "name": "Negative Scenario unauthenticated user",
         "description": "",
         "id": "viewcelestialbodies;negative-scenario-unauthenticated-user",
@@ -1846,8 +1687,7 @@
         "steps": [
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 104697600,
+              "duration": 75066900,
               "status": "passed"
             },
             "line": 15,
@@ -1855,19 +1695,11 @@
             "match": {
               "location": "com.revature.step.ViewCelestialBodiesSteps.the_user_is_not_logged_in()"
             },
-=======
-              "status": "undefined"
-            },
-            "line": 12,
-            "name": "an unauthenticated user, attempting to view celestial bodies should prompt for login.",
-            "match": {},
->>>>>>> aj
             "keyword": "Given "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 31097800,
+              "duration": 26287000,
               "status": "passed"
             },
             "line": 16,
@@ -1875,22 +1707,6 @@
             "match": {
               "location": "com.revature.step.ViewCelestialBodiesSteps.the_user_should_not_view_celestial_bodies_page()"
             },
-=======
-              "status": "skipped"
-            },
-            "line": 13,
-            "name": "The user is not logged in",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 14,
-            "name": "The user should not view celestial bodies page",
-            "match": {},
->>>>>>> aj
             "keyword": "Then "
           }
         ],
