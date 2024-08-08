@@ -19,6 +19,7 @@ import java.util.NoSuchElementException;
 public class AddMoonSteps {
 
     private String Moonname;
+    private Boolean flag = false;
 
     @Given("The user is logged in")
     public void the_user_is_logged_in() {
@@ -29,7 +30,7 @@ public class AddMoonSteps {
             TestRunner.loginPage.sendPassword("I am the night");
             TestRunner.loginPage.clickLoginButton();
         }
-        catch (UnhandledAlertException e){
+        catch (org.openqa.selenium.UnhandledAlertException e){
 
         }
     }
@@ -64,10 +65,15 @@ public class AddMoonSteps {
         }
     }
 
-    @When("The user enters a no image")
-    public void the_user_enters_a_no_image() {
+    @When("The user provides a Invalid MoonImage")
+    public void the_user_provides_a_Invalid_MoonImage() {
         // Write code here that turns the phrase above into concrete actions
-        TestRunner.homePage.sendMoonImageToInput(null);
+        try{
+            TestRunner.homePage.sendMoonImageToInput("C:\\Users\\vasd5\\OneDrive\\Desktop\\240701-JWA-Gen-AI\\Foundation Project\\setup\\src\\test\\resources\\Celestial-Images\\luna.txt");
+        }
+        catch (org.openqa.selenium.InvalidArgumentException e){
+            flag = false;
+        }
     }
 
     @When("The user clicks submit button")
@@ -79,7 +85,7 @@ public class AddMoonSteps {
     @Then("The new moon should be added")
     public void the_new_moon_should_be_added() {
         // Write code here that turns the phrase above into concrete actions
-        Boolean flag = false;
+        //Boolean flag = false;
         try{
             WebDriverWait wait = new WebDriverWait(TestRunner.driver, Duration.ofSeconds(30));
             WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//tr/td[contains(text(),\"" + Moonname + "\")]")));
@@ -87,7 +93,7 @@ public class AddMoonSteps {
                 flag = true;
             }
         }
-        catch (NoSuchElementException | UnhandledAlertException e){
+        catch (NoSuchElementException | UnhandledAlertException | org.openqa.selenium.TimeoutException e){
             flag = false;
         }
 
@@ -97,7 +103,7 @@ public class AddMoonSteps {
     @Then("The new moon should not be added")
     public void the_new_moon_should_not_be_added() {
         // Write code here that turns the phrase above into concrete actions
-        Boolean flag = false;
+        //Boolean flag = false;
         try{
             WebDriverWait wait = new WebDriverWait(TestRunner.driver, Duration.ofSeconds(30));
             WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//tr/td[contains(text(),\"" + Moonname + "\")]")));
@@ -105,7 +111,7 @@ public class AddMoonSteps {
                 flag = true;
             }
         }
-        catch (NoSuchElementException | UnhandledAlertException e){
+        catch (NoSuchElementException | UnhandledAlertException | org.openqa.selenium.TimeoutException e){
             flag = false;
         }
 

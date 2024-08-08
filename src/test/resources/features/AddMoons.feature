@@ -44,7 +44,7 @@ Feature: AddMoons
 
 	Examples: 
 		| Valid Moonname | Valid PlanetId | Invalid MoonImage |
-		| Sagan's Moon   | 1              |                   |
+		| Sagans  Moon   | 1              |                   |
 
 	@REV-TC-31 @JREQ-REV-47
 	Scenario Outline: Negative Scenario Moon name too long
@@ -98,10 +98,10 @@ Feature: AddMoons
 		When The user should pick moon option from dropdown
 		When The user enters a "<Valid Moonname>"
 		When The user enters Id "<Valid PlanetId>"
-		When The user provides a "<Invalid MoonImage>"
+		When The user provides a Invalid MoonImage
 		When The user clicks submit button
 		Then The new moon should not be added
 
 	Examples: 
-		| Valid Moonname | Valid PlanetId | Invalid MoonImage |
-		| Sagan's Moon   | 1              | luna.txt          |
+		| Valid Moonname | Valid PlanetId |
+		| Sagan Moon     | 1              |
