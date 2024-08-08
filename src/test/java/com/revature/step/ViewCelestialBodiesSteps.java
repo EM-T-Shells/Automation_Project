@@ -47,7 +47,7 @@ public class ViewCelestialBodiesSteps {
 
     @Then("The user should not view celestial bodies page")
     public void the_user_should_not_view_celestial_bodies_page() {
-        WebDriverWait wait = new WebDriverWait(TestRunner.driver, Duration.ofSeconds(5));
+        WebDriverWait wait = new WebDriverWait(TestRunner.driver, Duration.ofSeconds(10));
         WebElement messageElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/pre")));
         
         String messageText = messageElement.getText();

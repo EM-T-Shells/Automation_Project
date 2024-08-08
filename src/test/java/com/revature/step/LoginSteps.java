@@ -71,5 +71,6 @@ public class LoginSteps {
         the_user_enters_username("Yelan");
         the_user_enters_a_password("Aqua Simulacra");
         the_user_clicks_the_login_button();
+        the_user_should_be_logged_in_successfully_and_redirected_to_homepage();
     }
 }
