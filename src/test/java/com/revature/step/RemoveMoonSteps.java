@@ -17,6 +17,7 @@ import java.util.NoSuchElementException;
 public class RemoveMoonSteps {
 
     private String Moonname;
+    private Boolean flag2 = false;
 
     @Given("The user logged in")
     public void the_user_logged_in() {
@@ -28,7 +29,7 @@ public class RemoveMoonSteps {
             TestRunner.loginPage.clickLoginButton();
         }
         catch (org.openqa.selenium.UnhandledAlertException e){
-
+            flag2 = false;
         }
     }
 
@@ -83,10 +84,12 @@ public class RemoveMoonSteps {
             WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//tr/td[contains(text(),\"" + Moonname + "\")]")));
             if (element.isDisplayed()){
                 flag = true;
+                flag2 = false;
             }
         }
         catch (NoSuchElementException | UnhandledAlertException | org.openqa.selenium.TimeoutException e){
             flag = true;
+            flag2 = true;
         }
 
         Assert.assertTrue("The moon is not removed.", flag);
