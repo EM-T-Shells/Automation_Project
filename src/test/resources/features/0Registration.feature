@@ -1,5 +1,5 @@
-@Registration
-Feature: Registration
+@0Registration
+Feature: 0Registration
 
 	@REV-TC-2 @JREQ-REV-3
 	Scenario Outline: Positive Scenario user registration
@@ -14,7 +14,7 @@ Feature: Registration
 
 		Examples:
 			| Valid Username | valid password |
-			| CarlSagan2     | Cosmos2@2024   |
+			| CarlSagan      | Cosmos@2024    |
 
 	@REV-TC-3 @JREQ-REV-5
 	Scenario Outline: Negative Scenario Username not unique
@@ -27,7 +27,7 @@ Feature: Registration
 
 		Examples:
 			| valid password | Non-unique username |
-			| CosmosNoNums   | Galileo             |
+			| Cosmos@2024    | Batman              |
 
 	@REV-TC-4 @JREQ-REV-6
 	Scenario Outline: Negative scenario username too long
@@ -40,7 +40,7 @@ Feature: Registration
 
 		Examples:
 			| Too long username                        | valid password |
-			| CarlSagan_with_a_really_really_long_name | CosmosNoNums   |
+			| CarlSagan_with_a_really_really_long_name | Cosmos@2024    |
 
 	@REV-TC-7 @JREQ-REV-9
 	Scenario Outline: Negative scenario empty username

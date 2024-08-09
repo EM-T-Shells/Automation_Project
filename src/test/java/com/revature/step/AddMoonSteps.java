@@ -11,14 +11,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.io.FileNotFoundException;
 import java.time.Duration;
-import java.util.List;
 import java.util.NoSuchElementException;
 
 public class AddMoonSteps {
 
-    private String Moonname;
+    private final String currentDir = System.getProperty("user.dir");
+
+    private String moonName;
     private Boolean flag = false;
     private Boolean flag2 = false;
 
@@ -46,7 +46,7 @@ public class AddMoonSteps {
     @When("The user enters a {string}")
     public void the_user_enters_a(String string) {
         // Write code here that turns the phrase above into concrete actions
-        Moonname = string;
+        moonName = string;
         TestRunner.homePage.sendMoonToAdd(string);
     }
 
@@ -59,7 +59,7 @@ public class AddMoonSteps {
     @When("The user provides a {string}")
     public void the_user_provides_a(String string) {
         // Write code here that turns the phrase above into concrete actions
-        String filepath = "C:\\Users\\vasd5\\OneDrive\\Desktop\\Planetarium-Project\\src\\test\\resources\\images\\";
+        String filepath = currentDir + "\\src\\test\\resources\\images\\";
         if (!(string.isEmpty())) {
             filepath = filepath + string;
             TestRunner.homePage.sendMoonImageToInput(filepath);
@@ -70,7 +70,7 @@ public class AddMoonSteps {
     public void the_user_provides_a_Invalid_MoonImage() {
         // Write code here that turns the phrase above into concrete actions
         try{
-            TestRunner.homePage.sendMoonImageToInput("C:\\Users\\vasd5\\OneDrive\\Desktop\\Planetarium-Project\\src\\test\\resources\\images\\luna.txt");
+            TestRunner.homePage.sendMoonImageToInput(currentDir + "\\src\\test\\resources\\images\\luna.txt");
         }
         catch (org.openqa.selenium.InvalidArgumentException e){
             flag = false;
@@ -89,7 +89,7 @@ public class AddMoonSteps {
         //Boolean flag = false;
         try{
             WebDriverWait wait = new WebDriverWait(TestRunner.driver, Duration.ofSeconds(30));
-            WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//tr/td[contains(text(),\"" + Moonname + "\")]")));
+            WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//tr/td[contains(text(),\"" + moonName + "\")]")));
             if (element.isDisplayed()){
                 flag = true;
                 flag2 = true;
@@ -108,7 +108,7 @@ public class AddMoonSteps {
         //Boolean flag = false;
         try{
             WebDriverWait wait = new WebDriverWait(TestRunner.driver, Duration.ofSeconds(30));
-            WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//tr/td[contains(text(),\"" + Moonname + "\")]")));
+            WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//tr/td[contains(text(),\"" + moonName + "\")]")));
             if (element.isDisplayed()){
                 flag = true;
                 flag2 = true;
