@@ -20,6 +20,7 @@ public class AddMoonSteps {
 
     private String Moonname;
     private Boolean flag = false;
+    private Boolean flag2 = false;
 
     @Given("The user is logged in")
     public void the_user_is_logged_in() {
@@ -31,7 +32,7 @@ public class AddMoonSteps {
             TestRunner.loginPage.clickLoginButton();
         }
         catch (org.openqa.selenium.UnhandledAlertException e){
-
+            flag2 = false;
         }
     }
 
@@ -58,7 +59,7 @@ public class AddMoonSteps {
     @When("The user provides a {string}")
     public void the_user_provides_a(String string) {
         // Write code here that turns the phrase above into concrete actions
-        String filepath = "C:\\Users\\vasd5\\OneDrive\\Desktop\\240701-JWA-Gen-AI\\Foundation Project\\setup\\src\\test\\resources\\Celestial-Images\\";
+        String filepath = "C:\\Users\\vasd5\\OneDrive\\Desktop\\Planetarium-Project\\src\\test\\resources\\images\\";
         if (!(string.isEmpty())) {
             filepath = filepath + string;
             TestRunner.homePage.sendMoonImageToInput(filepath);
@@ -69,7 +70,7 @@ public class AddMoonSteps {
     public void the_user_provides_a_Invalid_MoonImage() {
         // Write code here that turns the phrase above into concrete actions
         try{
-            TestRunner.homePage.sendMoonImageToInput("C:\\Users\\vasd5\\OneDrive\\Desktop\\240701-JWA-Gen-AI\\Foundation Project\\setup\\src\\test\\resources\\Celestial-Images\\luna.txt");
+            TestRunner.homePage.sendMoonImageToInput("C:\\Users\\vasd5\\OneDrive\\Desktop\\Planetarium-Project\\src\\test\\resources\\images\\luna.txt");
         }
         catch (org.openqa.selenium.InvalidArgumentException e){
             flag = false;
@@ -91,6 +92,7 @@ public class AddMoonSteps {
             WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//tr/td[contains(text(),\"" + Moonname + "\")]")));
             if (element.isDisplayed()){
                 flag = true;
+                flag2 = true;
             }
         }
         catch (NoSuchElementException | UnhandledAlertException | org.openqa.selenium.TimeoutException e){
@@ -109,6 +111,7 @@ public class AddMoonSteps {
             WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//tr/td[contains(text(),\"" + Moonname + "\")]")));
             if (element.isDisplayed()){
                 flag = true;
+                flag2 = true;
             }
         }
         catch (NoSuchElementException | UnhandledAlertException | org.openqa.selenium.TimeoutException e){
