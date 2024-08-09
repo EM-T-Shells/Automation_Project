@@ -22,7 +22,7 @@ public class RemovePlanetSteps {
 
     @Then("The planet, {string}, should be removed from the planetarium")
     public void thePlanetShouldBeRemovedFromThePlanetarium(String name) {
-        Assert.assertFalse(TestRunner.homePage.getPlanetInfo(name));
+        Assert.assertFalse(TestRunner.homePage.checkCelestialBody(name));
     }
 
     @Then("The planet should fail to be deleted")

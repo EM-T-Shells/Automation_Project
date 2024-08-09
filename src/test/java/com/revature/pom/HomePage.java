@@ -67,7 +67,7 @@ public class HomePage {
         return cols.get(col);
     }
 
-    public boolean getPlanetInfo(String name) {
+    public boolean checkCelestialBody(String name) {
         try {
             table.findElement(By.xpath("//tr/td[contains(text(),\"" + name + "\")]"));
         } catch (Exception e) {

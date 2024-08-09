@@ -9,6 +9,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class AddPlanetSteps {
 
+    private final String currentDir = System.getProperty("user.dir");
+
     @When("The user selects Planet from the drop down menu")
     public void the_user_selects_Planet_from_the_drop_down_menu() {
         TestRunner.homePage.selectPlanetToAdd();
@@ -23,7 +25,7 @@ public class AddPlanetSteps {
 
     @When("The user provides a valid planet image")
     public void the_user_provides_a_valid_planet_image() {
-        TestRunner.homePage.sendPlanetImageToInput("C:\\Users\\shado\\revature\\Automation_Project\\src\\test\\resources\\images\\furina.jpg");
+        TestRunner.homePage.sendPlanetImageToInput(currentDir + "\\src\\test\\resources\\images\\furina.jpg");
     }
 
     @When("The user clicks the Submit Planet button")
@@ -33,7 +35,7 @@ public class AddPlanetSteps {
 
     @Then("The {string} planet should be added to the planetarium")
     public void the_planet_should_be_added_to_planetarium(String name) {
-        Assert.assertTrue(TestRunner.homePage.getPlanetInfo(name));
+        Assert.assertTrue(TestRunner.homePage.checkCelestialBody(name));
     }
 
 
@@ -58,6 +60,6 @@ public class AddPlanetSteps {
 
     @When("The user provides an invalid image format")
     public void theUserProvidesAnInvalidImageFormat() {
-        TestRunner.homePage.sendPlanetImageToInput("C:\\Users\\shado\\revature\\Automation_Project\\src\\test\\resources\\images\\planet.txt");
+        TestRunner.homePage.sendPlanetImageToInput(currentDir + "\\src\\test\\resources\\images\\planet.txt");
     }
 }
