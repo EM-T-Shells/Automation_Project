@@ -7,7 +7,7 @@ Feature: AddMoons
 		Given The user is logged in
 		When The user should pick moon option from dropdown
 		When The user enters a "<Valid Moonname>"
-		When The user enters a "<Valid PlanetId>"
+		When The user enters Id "<Valid PlanetId>"
 		When The user provides a "<Valid MoonImage>"
 		When The user clicks submit button
 		Then The new moon should be added
@@ -22,14 +22,14 @@ Feature: AddMoons
 		Given The user is logged in
 		When The user should pick moon option from dropdown
 		When The user enters a "<Valid Moonname>"
-		When The user enters a "<Valid PlanetId>"
-		When The user enters a "<Valid MoonImage>"
+		When The user enters Id "<Valid PlanetId>"
+		When The user provides a "<Valid MoonImage>"
 		When The user clicks submit button
 		Then The new moon should be added
 
 		Examples:
 			| Valid Moonname                  | Valid PlanetId | Valid MoonImage |
-			| MoonWithExactlyThirtyCharacters | 1              | moon-1.jpg      |
+			| MoonWithExactlyThirtyCharacter  | 1              | moon-1.jpg      |
 
 	@REV-TC-30 @JREQ-REV-79 @JREQ-REV-52
 	Scenario Outline: Positive Scenario User can add moon without image : Error Guess Testing
@@ -37,13 +37,13 @@ Feature: AddMoons
 		Given The user is logged in
 		When The user should pick moon option from dropdown
 		When The user enters a "<Valid Moonname>"
-		When The user enters a "<Valid PlanetId>"
+		When The user enters Id "<Valid PlanetId>"
 		When The user clicks submit button
 		Then The new moon should be added
 
 		Examples:
-			| Valid Moonname | Valid PlanetId |
-			| Sagan's Moon   | 1              |
+			| Valid Moonname         | Valid PlanetId |
+			| MoonNameWithoutImage   | 1              |
 
 	@REV-TC-31 @JREQ-REV-47
 	Scenario Outline: Negative Scenario Moon name too long
@@ -51,8 +51,8 @@ Feature: AddMoons
 		Given The user is logged in
 		When The user should pick moon option from dropdown
 		When The user enters a "<Invalid Moonname>"
-		When The user enters a "<Valid PlanetId>"
-		When The user enters a "<Valid MoonImage>"
+		When The user enters Id "<Valid PlanetId>"
+		When The user provides a "<Valid MoonImage>"
 		When The user clicks submit button
 		Then The new moon should not be added
 
@@ -66,8 +66,8 @@ Feature: AddMoons
 		Given The user is logged in
 		When The user should pick moon option from dropdown
 		When The user enters a "<Invalid Moonname>"
-		When The user enters a "<Valid PlanetId>"
-		When The user enters a "<Valid MoonImage>"
+		When The user enters Id "<Valid PlanetId>"
+		When The user provides a "<Valid MoonImage>"
 		When The user clicks submit button
 		Then The new moon should not be added
 
@@ -80,8 +80,8 @@ Feature: AddMoons
 	an empty moon name, a user should not be able to add a new moon
 		Given The user is logged in
 		When The user should pick moon option from dropdown
-		When The user enters a "<Valid PlanetId>"
-		When The user enters a "<Valid MoonImage>"
+		When The user enters Id "<Valid PlanetId>"
+		When The user provides a "<Valid MoonImage>"
 		When The user clicks submit button
 		Then The new moon should not be added
 
@@ -95,11 +95,11 @@ Feature: AddMoons
 		Given The user logged in
 		When The user should pick moon option from dropdown
 		When The user enters a "<Valid Moonname>"
-		When The user enters a "<Valid PlanetId>"
-		When The user enters a "<Invalid MoonImage>"
+		When The user enters Id "<Valid PlanetId>"
+		When The user provides a "<Invalid MoonImage>"
 		When The user clicks submit button
 		Then The new moon should not be added
 
 		Examples:
-			| Valid Moonname | Valid PlanetId | Invalid MoonImage |
-			| Sagan's Moon   | 1              | luna.txt          |
+			| Valid Moonname             | Valid PlanetId | Invalid MoonImage |
+			| MoonNameWithInvalidImage   | 1              | luna.txt          |

@@ -62,7 +62,7 @@ public class RemoveMoonSteps {
         // Write code here that turns the phrase above into concrete actions
         Boolean flag = false;
         try{
-            WebDriverWait wait = new WebDriverWait(TestRunner.driver, Duration.ofSeconds(30));
+            WebDriverWait wait = new WebDriverWait(TestRunner.driver, Duration.ofSeconds(2));
             WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//tr/td[contains(text(),\"" + Moonname + "\")]")));
             if (element.isDisplayed()){
                 flag = true;
@@ -80,7 +80,7 @@ public class RemoveMoonSteps {
         // Write code here that turns the phrase above into concrete actions
         Boolean flag = false;
         try{
-            WebDriverWait wait = new WebDriverWait(TestRunner.driver, Duration.ofSeconds(30));
+            WebDriverWait wait = new WebDriverWait(TestRunner.driver, Duration.ofSeconds(2));
             WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//tr/td[contains(text(),\"" + Moonname + "\")]")));
             if (element.isDisplayed()){
                 flag = true;
