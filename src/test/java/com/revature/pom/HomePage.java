@@ -12,12 +12,7 @@ import java.util.List;
 
 public class HomePage {
     private final WebDriver driver;
-
-    private final String url = "http:/localhost:8080/planetarium";
-    private final WebDriverWait wait;
-
-    @FindBy(id = "tableId")
-    private WebElement table;
+    public final WebDriverWait wait;
 
     @FindBy(id = "deleteButton")
     private WebElement deleteButton;
@@ -25,10 +20,10 @@ public class HomePage {
     @FindBy(id = "deleteInput")
     private WebElement deleteInput;
 
-    @FindBy(xpath = "//html//body//div[1]//select//option[@value = 'planet']")
+    @FindBy(xpath = "//option[@value = 'planet']")
     private WebElement selectPlanet;
 
-    @FindBy(xpath = "//html//body//div[1]//select//option[@value = 'moon']")
+    @FindBy(xpath = "//option[@value = 'moon']")
     private WebElement selectMoon;
 
     @FindBy(id = "moonNameInput")
@@ -41,19 +36,24 @@ public class HomePage {
     private WebElement orbitedPlanetInput;
 
     @FindBy(id = "planetNameInput")
-    private WebElement planetNameInput;
+    public WebElement planetNameInput;
 
     @FindBy(id = "planetImageInput")
     private WebElement planetImageInput;
 
-    @FindBy(xpath = "//html//body//div[1]//div[2]//button")
+    @FindBy(xpath = "//button[@class = 'submit-button']")
     private WebElement submitButton;
+
+    @FindBy(id = "celestialTable")
+    private WebElement table;
+
+    @FindBy(xpath = "/html/body/button")
+    private WebElement logoutButton;
 
     public HomePage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
         wait = new WebDriverWait(driver, Duration.ofSeconds(2));
-        driver.get(url);
     }
 
     public List<WebElement> getTableRows() {
@@ -65,6 +65,15 @@ public class HomePage {
         WebElement selectedRow = rows.get(row);
         List<WebElement> cols = selectedRow.findElements(By.tagName("td"));
         return cols.get(col);
+    }
+
+    public boolean checkCelestialBody(String name) {
+        try {
+            table.findElement(By.xpath("//tr/td[contains(text(),\"" + name + "\")]"));
+        } catch (Exception e) {
+            return false;
+        }
+        return true;
     }
 
     public void clickDelete() {
@@ -105,5 +114,9 @@ public class HomePage {
 
     public void clickSubmit() {
         submitButton.click();
+    }
+
+    public void clickLogout() {
+        logoutButton.click();
     }
 }
