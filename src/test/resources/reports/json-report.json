@@ -3,7 +3,1991 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-08-07T20:28:25.852Z",
+        "start_timestamp": "2024-08-12T15:24:18.346Z",
+        "line": 17,
+        "name": "Positive Scenario user registration",
+        "description": "",
+        "id": "0registration;positive-scenario-user-registration;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 129870700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The user navigates to the landing page",
+            "match": {
+              "location": "com.revature.step.LoginSteps.the_user_navigates_to_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 218419700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The user clicks Create Account link and is redirected to the registration page",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_clicks_Create_Account_link_and_is_redirected_to_the_registration_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 186886700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "The user provides a valid username \"CarlSagan\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CarlSagan\"",
+                  "offset": 35
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.the_user_provides_a_valid_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 208439900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The user provides a valid password \"Cosmos@2024\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Cosmos@2024\"",
+                  "offset": 35
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.the_user_provides_a_valid_password(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 82545700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The user clicks the Create button",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_clicks_the_Create_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1053641600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The user is alerted that Account created successfully with username \"CarlSagan\" and password \"Cosmos@2024\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CarlSagan\"",
+                  "offset": 68
+                },
+                {
+                  "val": "\"Cosmos@2024\"",
+                  "offset": 93
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.theUserIsAlertedThatAccountCreatedSuccessfullyWithUsernameAndPassword(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 15669100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "The user clicks OK to dismiss the alert",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_clicks_OK_to_dismiss_the_alert()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 63866300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "The user is redirected to the login page",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_is_redirected_to_the_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@0Registration"
+          },
+          {
+            "name": "@REV-TC-2"
+          },
+          {
+            "name": "@JREQ-REV-3"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-12T15:24:20.460Z",
+        "line": 30,
+        "name": "Negative Scenario Username not unique",
+        "description": "",
+        "id": "0registration;negative-scenario-username-not-unique;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 40133700,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "The user navigates to the landing page",
+            "match": {
+              "location": "com.revature.step.LoginSteps.the_user_navigates_to_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 131391200,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "The user clicks Create Account link and is redirected to the registration page",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_clicks_Create_Account_link_and_is_redirected_to_the_registration_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 77209700,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "The user provides a non-unique username \"Batman\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Batman\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.the_user_provides_a_non_unique_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 108062600,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "The user provides a valid password \"Cosmos@2024\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Cosmos@2024\"",
+                  "offset": 35
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.the_user_provides_a_valid_password(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 56602200,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "The user clicks the Create button",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_clicks_the_Create_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 538177500,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "The user is alerted that Account creation failed with username \"Batman\" and password \"Cosmos@2024\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Batman\"",
+                  "offset": 63
+                },
+                {
+                  "val": "\"Cosmos@2024\"",
+                  "offset": 85
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.the_user_is_alerted_that_Account_creation_failed_with_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@0Registration"
+          },
+          {
+            "name": "@REV-TC-3"
+          },
+          {
+            "name": "@JREQ-REV-5"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-12T15:24:21.448Z",
+        "line": 43,
+        "name": "Negative scenario username too long",
+        "description": "",
+        "id": "0registration;negative-scenario-username-too-long;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 73864200,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "The user navigates to the landing page",
+            "match": {
+              "location": "com.revature.step.LoginSteps.the_user_navigates_to_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 144568100,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "The user clicks Create Account link and is redirected to the registration page",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_clicks_Create_Account_link_and_is_redirected_to_the_registration_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 255178300,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "The user provides a too long username \"CarlSagan_with_a_really_really_long_name\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CarlSagan_with_a_really_really_long_name\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.the_user_enters_a_too_long_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 144019900,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "The user provides a valid password \"Cosmos@2024\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Cosmos@2024\"",
+                  "offset": 35
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.the_user_provides_a_valid_password(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 75443700,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "The user clicks the Create button",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_clicks_the_Create_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 41207700,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "The user is alerted that Account creation failed with username \"CarlSagan_with_a_really_really_long_name\" and password \"Cosmos@2024\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CarlSagan_with_a_really_really_long_name\"",
+                  "offset": 63
+                },
+                {
+                  "val": "\"Cosmos@2024\"",
+                  "offset": 119
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.the_user_is_alerted_that_Account_creation_failed_with_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@0Registration"
+          },
+          {
+            "name": "@REV-TC-4"
+          },
+          {
+            "name": "@JREQ-REV-6"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-12T15:24:22.195Z",
+        "line": 56,
+        "name": "Negative scenario empty username",
+        "description": "",
+        "id": "0registration;negative-scenario-empty-username;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 42331700,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "The user navigates to the landing page",
+            "match": {
+              "location": "com.revature.step.LoginSteps.the_user_navigates_to_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 127464500,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "The user clicks Create Account link and is redirected to the registration page",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_clicks_Create_Account_link_and_is_redirected_to_the_registration_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 98430100,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "The user provides an empty username",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_provides_an_empty_username()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 211106400,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "The user provides a valid password \"Cosmos@2024\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Cosmos@2024\"",
+                  "offset": 35
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.the_user_provides_a_valid_password(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 82881800,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "The user clicks the Create button",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_clicks_the_Create_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24668300,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "The user is alerted that Account creation failed with username \"\" and password \"Cosmos@2024\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 63
+                },
+                {
+                  "val": "\"Cosmos@2024\"",
+                  "offset": 79
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.the_user_is_alerted_that_Account_creation_failed_with_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@0Registration"
+          },
+          {
+            "name": "@REV-TC-7"
+          },
+          {
+            "name": "@JREQ-REV-9"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-12T15:24:22.798Z",
+        "line": 69,
+        "name": "Negative scenario empty password",
+        "description": "",
+        "id": "0registration;negative-scenario-empty-password;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 88375900,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "The user navigates to the landing page",
+            "match": {
+              "location": "com.revature.step.LoginSteps.the_user_navigates_to_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 164628700,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "The user clicks Create Account link and is redirected to the registration page",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_clicks_Create_Account_link_and_is_redirected_to_the_registration_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 157210400,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "The user provides a valid username \"CarlSagan\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CarlSagan\"",
+                  "offset": 35
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.the_user_provides_a_valid_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 93279800,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "The user provides an empty password",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_provides_an_empty_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 85961800,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "The user clicks the Create button",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_clicks_the_Create_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 32116200,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "The user is alerted that Account creation failed with username \"CarlSagan\" and password \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CarlSagan\"",
+                  "offset": 63
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 88
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.the_user_is_alerted_that_Account_creation_failed_with_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@0Registration"
+          },
+          {
+            "name": "@REV-TC-8"
+          },
+          {
+            "name": "@JREQ-REV-10"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-12T15:24:23.444Z",
+        "line": 84,
+        "name": "Positive Scenario user registration Password length exactly 30 characters",
+        "description": "",
+        "id": "0registration;positive-scenario-user-registration-password-length-exactly-30-characters;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 64969200,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "The user navigates to the landing page",
+            "match": {
+              "location": "com.revature.step.LoginSteps.the_user_navigates_to_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 151791600,
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "The user clicks Create Account link and is redirected to the registration page",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_clicks_Create_Account_link_and_is_redirected_to_the_registration_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 144312200,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "The user provides a valid username \"UniqueUsername\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"UniqueUsername\"",
+                  "offset": 35
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.the_user_provides_a_valid_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 129584000,
+              "status": "passed"
+            },
+            "line": 76,
+            "name": "The user provides a password that is exactly thirty characters \"PasswordWithExactlyCharacters!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PasswordWithExactlyCharacters!\"",
+                  "offset": 63
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.the_user_provides_a_password_that_is_exactly_thirty_characters(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 63419800,
+              "status": "passed"
+            },
+            "line": 77,
+            "name": "The user clicks the Create button",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_clicks_the_Create_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 522837500,
+              "status": "passed"
+            },
+            "line": 78,
+            "name": "The user is alerted that Account created successfully with username \"UniqueUsername\" and password \"PasswordWithExactlyCharacters!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"UniqueUsername\"",
+                  "offset": 68
+                },
+                {
+                  "val": "\"PasswordWithExactlyCharacters!\"",
+                  "offset": 98
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.theUserIsAlertedThatAccountCreatedSuccessfullyWithUsernameAndPassword(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11020100,
+              "status": "passed"
+            },
+            "line": 79,
+            "name": "The user clicks OK to dismiss the alert",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_clicks_OK_to_dismiss_the_alert()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 43156800,
+              "status": "passed"
+            },
+            "line": 80,
+            "name": "The user is redirected to the login page",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_is_redirected_to_the_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@0Registration"
+          },
+          {
+            "name": "@REV-TC-39"
+          },
+          {
+            "name": "@JREQ-REV-12"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-12T15:24:24.599Z",
+        "line": 98,
+        "name": "Negative scenario password too long - new",
+        "description": "\tPassword greater than 30 characters",
+        "id": "0registration;negative-scenario-password-too-long---new;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 44821900,
+              "status": "passed"
+            },
+            "line": 89,
+            "name": "The user navigates to the landing page",
+            "match": {
+              "location": "com.revature.step.LoginSteps.the_user_navigates_to_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 124524700,
+              "status": "passed"
+            },
+            "line": 90,
+            "name": "The user clicks Create Account link and is redirected to the registration page",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_clicks_Create_Account_link_and_is_redirected_to_the_registration_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 79615100,
+              "status": "passed"
+            },
+            "line": 91,
+            "name": "The user provides a valid username \"CarlSagan\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CarlSagan\"",
+                  "offset": 35
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.the_user_provides_a_valid_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 134739500,
+              "status": "passed"
+            },
+            "line": 92,
+            "name": "The user provides a too long password \"ThisIsAVeryLongPasswordThatExceedsThirtyCharacters\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ThisIsAVeryLongPasswordThatExceedsThirtyCharacters\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.the_user_provides_a_too_long_password(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 63616600,
+              "status": "passed"
+            },
+            "line": 93,
+            "name": "The user clicks the Create button",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_clicks_the_Create_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 522264300,
+              "status": "passed"
+            },
+            "line": 94,
+            "name": "The user is alerted that Account creation failed with username \"CarlSagan\" and password \"ThisIsAVeryLongPasswordThatExceedsThirtyCharacters\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CarlSagan\"",
+                  "offset": 63
+                },
+                {
+                  "val": "\"ThisIsAVeryLongPasswordThatExceedsThirtyCharacters\"",
+                  "offset": 88
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.the_user_is_alerted_that_Account_creation_failed_with_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@0Registration"
+          },
+          {
+            "name": "@REV-TC-42"
+          },
+          {
+            "name": "@JREQ-REV-7"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-12T15:24:25.578Z",
+        "line": 112,
+        "name": "Negative Scenario credentials too long - new",
+        "description": "\tBoth username and password greater than 30 characters each",
+        "id": "0registration;negative-scenario-credentials-too-long---new;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 66239500,
+              "status": "passed"
+            },
+            "line": 103,
+            "name": "The user navigates to the landing page",
+            "match": {
+              "location": "com.revature.step.LoginSteps.the_user_navigates_to_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 118951900,
+              "status": "passed"
+            },
+            "line": 104,
+            "name": "The user clicks Create Account link and is redirected to the registration page",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_clicks_Create_Account_link_and_is_redirected_to_the_registration_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 143363500,
+              "status": "passed"
+            },
+            "line": 105,
+            "name": "The user provides a too long username \"CarlSagan_with_a_really_really_long_name\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CarlSagan_with_a_really_really_long_name\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.the_user_enters_a_too_long_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 146231400,
+              "status": "passed"
+            },
+            "line": 106,
+            "name": "The user provides a too long password \"ThisIsAVeryLongPasswordThatExceedsThirtyCharacters\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ThisIsAVeryLongPasswordThatExceedsThirtyCharacters\"",
+                  "offset": 38
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.the_user_provides_a_too_long_password(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 64395400,
+              "status": "passed"
+            },
+            "line": 107,
+            "name": "The user clicks the Create button",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_clicks_the_Create_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 22752400,
+              "status": "passed"
+            },
+            "line": 108,
+            "name": "The user is alerted that Account creation failed with username \"CarlSagan_with_a_really_really_long_name\" and password \"ThisIsAVeryLongPasswordThatExceedsThirtyCharacters\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CarlSagan_with_a_really_really_long_name\"",
+                  "offset": 63
+                },
+                {
+                  "val": "\"ThisIsAVeryLongPasswordThatExceedsThirtyCharacters\"",
+                  "offset": 119
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.the_user_is_alerted_that_Account_creation_failed_with_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@0Registration"
+          },
+          {
+            "name": "@REV-TC-43"
+          },
+          {
+            "name": "@JREQ-REV-8"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-12T15:24:26.157Z",
+        "line": 129,
+        "name": "Positive Scenario user registration Username length exactly 30 characters - new",
+        "description": "\tBoundary Analysis Username length 30 characters\n\tUsing a username with exactly 30 characters and valid password a user should be able to register an account",
+        "id": "0registration;positive-scenario-user-registration-username-length-exactly-30-characters---new;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 86272400,
+              "status": "passed"
+            },
+            "line": 118,
+            "name": "The user navigates to the landing page",
+            "match": {
+              "location": "com.revature.step.LoginSteps.the_user_navigates_to_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 229908000,
+              "status": "passed"
+            },
+            "line": 119,
+            "name": "The user clicks Create Account link and is redirected to the registration page",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_clicks_Create_Account_link_and_is_redirected_to_the_registration_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 190517800,
+              "status": "passed"
+            },
+            "line": 120,
+            "name": "The user provides a username that is exactly thirty characters \"UserWitExactlyThirtyCharacters\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"UserWitExactlyThirtyCharacters\"",
+                  "offset": 63
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.the_user_provides_a_username_that_is_exactly_thirty_characters(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 120411200,
+              "status": "passed"
+            },
+            "line": 121,
+            "name": "The user provides a valid password \"Cosmos@2024\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Cosmos@2024\"",
+                  "offset": 35
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.the_user_provides_a_valid_password(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 88298800,
+              "status": "passed"
+            },
+            "line": 122,
+            "name": "The user clicks the Create button",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_clicks_the_Create_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 522964900,
+              "status": "passed"
+            },
+            "line": 123,
+            "name": "The user is alerted that Account created successfully with username \"UserWitExactlyThirtyCharacters\" and password \"Cosmos@2024\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"UserWitExactlyThirtyCharacters\"",
+                  "offset": 68
+                },
+                {
+                  "val": "\"Cosmos@2024\"",
+                  "offset": 114
+                }
+              ],
+              "location": "com.revature.step.RegistrationSteps.theUserIsAlertedThatAccountCreatedSuccessfullyWithUsernameAndPassword(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8563700,
+              "status": "passed"
+            },
+            "line": 124,
+            "name": "The user clicks OK to dismiss the alert",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_clicks_OK_to_dismiss_the_alert()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 38415300,
+              "status": "passed"
+            },
+            "line": 125,
+            "name": "The user is redirected to the login page",
+            "match": {
+              "location": "com.revature.step.RegistrationSteps.the_user_is_redirected_to_the_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@0Registration"
+          },
+          {
+            "name": "@REV-TC-44"
+          },
+          {
+            "name": "@JREQ-REV-11"
+          }
+        ]
+      }
+    ],
+    "name": "0Registration",
+    "description": "",
+    "id": "0registration",
+    "keyword": "Feature",
+    "uri": "classpath:features/0Registration.feature",
+    "tags": [
+      {
+        "name": "@0Registration",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2024-08-12T15:24:27.457Z",
+        "line": 17,
+        "name": "Positive Scenario User can add moon",
+        "description": "\ta valid moon name and planet, a user should be able to add a new moon to the Planetarium",
+        "id": "addmoons;positive-scenario-user-can-add-moon;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 305643100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The user is logged in",
+            "match": {
+              "location": "com.revature.step.AddMoonSteps.the_user_is_logged_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 749245600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "The user should pick moon option from dropdown",
+            "match": {
+              "location": "com.revature.step.AddMoonSteps.the_user_should_pick_moon_option_from_dropdown()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 386196200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The user enters a \"Sagan\u0027s Moon\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sagan\u0027s Moon\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.revature.step.AddMoonSteps.the_user_enters_a(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 270012100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The user enters Id \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.revature.step.AddMoonSteps.the_user_enters_Id(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 127324000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The user provides a \"moon-1.jpg\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"moon-1.jpg\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.revature.step.AddMoonSteps.the_user_provides_a(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 541091200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "The user clicks submit button",
+            "match": {
+              "location": "com.revature.step.AddMoonSteps.the_user_clicks_submit_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1051210700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "The new moon should be added",
+            "match": {
+              "location": "com.revature.step.AddMoonSteps.the_new_moon_should_be_added()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddMoons"
+          },
+          {
+            "name": "@REV-TC-28"
+          },
+          {
+            "name": "@JREQ-REV-46"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-12T15:24:31.011Z",
+        "line": 32,
+        "name": "Boundary Analysis Moon name length 30 characters",
+        "description": "\ta moon name with exactly 30 characters, a user should be able to add a new moon",
+        "id": "addmoons;boundary-analysis-moon-name-length-30-characters;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2228582900,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "The user is logged in",
+            "match": {
+              "location": "com.revature.step.AddMoonSteps.the_user_is_logged_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1173506000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "The user should pick moon option from dropdown",
+            "match": {
+              "location": "com.revature.step.AddMoonSteps.the_user_should_pick_moon_option_from_dropdown()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1574411300,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "The user enters a \"MoonWithExactlyThirtyCharacter\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"MoonWithExactlyThirtyCharacter\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.revature.step.AddMoonSteps.the_user_enters_a(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1250323000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "The user enters Id \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.revature.step.AddMoonSteps.the_user_enters_Id(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 769840600,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "The user provides a \"moon-1.jpg\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"moon-1.jpg\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.revature.step.AddMoonSteps.the_user_provides_a(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 650498000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "The user clicks submit button",
+            "match": {
+              "location": "com.revature.step.AddMoonSteps.the_user_clicks_submit_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 883252500,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "The new moon should be added",
+            "match": {
+              "location": "com.revature.step.AddMoonSteps.the_new_moon_should_be_added()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddMoons"
+          },
+          {
+            "name": "@REV-TC-29"
+          },
+          {
+            "name": "@JREQ-REV-51"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-12T15:24:39.559Z",
+        "line": 46,
+        "name": "Positive Scenario User can add moon without image : Error Guess Testing",
+        "description": "\ta moon name without an image user should still be able to add to database",
+        "id": "addmoons;positive-scenario-user-can-add-moon-without-image-:-error-guess-testing;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 998535200,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "The user is logged in",
+            "match": {
+              "location": "com.revature.step.AddMoonSteps.the_user_is_logged_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 768941000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "The user should pick moon option from dropdown",
+            "match": {
+              "location": "com.revature.step.AddMoonSteps.the_user_should_pick_moon_option_from_dropdown()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1551849900,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "The user enters a \"MoonNameWithoutImage\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"MoonNameWithoutImage\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.revature.step.AddMoonSteps.the_user_enters_a(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 363916100,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "The user enters Id \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.revature.step.AddMoonSteps.the_user_enters_Id(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 199759000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "The user clicks submit button",
+            "match": {
+              "location": "com.revature.step.AddMoonSteps.the_user_clicks_submit_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: The moon is added.\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat com.revature.step.AddMoonSteps.the_new_moon_should_be_added(AddMoonSteps.java:102)\r\n\tat ✽.The new moon should be added(classpath:features/AddMoons.feature:42)\r\n",
+              "duration": 2867784500,
+              "status": "failed"
+            },
+            "line": 42,
+            "name": "The new moon should be added",
+            "match": {
+              "location": "com.revature.step.AddMoonSteps.the_new_moon_should_be_added()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddMoons"
+          },
+          {
+            "name": "@REV-TC-30"
+          },
+          {
+            "name": "@JREQ-REV-79"
+          },
+          {
+            "name": "@JREQ-REV-52"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-12T15:24:46.373Z",
+        "line": 61,
+        "name": "Negative Scenario Moon name too long",
+        "description": "\ta moon name longer than 30 characters, a user should not be able to add a new moon",
+        "id": "addmoons;negative-scenario-moon-name-too-long;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 753065900,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "The user is logged in",
+            "match": {
+              "location": "com.revature.step.AddMoonSteps.the_user_is_logged_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 388706000,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "The user should pick moon option from dropdown",
+            "match": {
+              "location": "com.revature.step.AddMoonSteps.the_user_should_pick_moon_option_from_dropdown()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 700891000,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "The user enters a \"MoonNameIsThirtyOneCharactersLg\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"MoonNameIsThirtyOneCharactersLg\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.revature.step.AddMoonSteps.the_user_enters_a(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 813930200,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "The user enters Id \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.revature.step.AddMoonSteps.the_user_enters_Id(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 65840500,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "The user provides a \"moon-1.jpg\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"moon-1.jpg\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.revature.step.AddMoonSteps.the_user_provides_a(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 95076900,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "The user clicks submit button",
+            "match": {
+              "location": "com.revature.step.AddMoonSteps.the_user_clicks_submit_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 633325400,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "The new moon should not be added",
+            "match": {
+              "location": "com.revature.step.AddMoonSteps.the_new_moon_should_not_be_added()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddMoons"
+          },
+          {
+            "name": "@REV-TC-31"
+          },
+          {
+            "name": "@JREQ-REV-47"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-12T15:24:49.846Z",
+        "line": 76,
+        "name": "Negative Scenario Moon name not unique",
+        "description": "\ta non-unique moon name, a user should not be able to add a new moon",
+        "id": "addmoons;negative-scenario-moon-name-not-unique;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 699997600,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "The user is logged in",
+            "match": {
+              "location": "com.revature.step.AddMoonSteps.the_user_is_logged_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 314893100,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "The user should pick moon option from dropdown",
+            "match": {
+              "location": "com.revature.step.AddMoonSteps.the_user_should_pick_moon_option_from_dropdown()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 133846600,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "The user enters a \"Luna\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Luna\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.revature.step.AddMoonSteps.the_user_enters_a(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 488568700,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "The user enters Id \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.revature.step.AddMoonSteps.the_user_enters_Id(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 72240700,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "The user provides a \"moon-1.jpg\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"moon-1.jpg\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.revature.step.AddMoonSteps.the_user_provides_a(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 82059600,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "The user clicks submit button",
+            "match": {
+              "location": "com.revature.step.AddMoonSteps.the_user_clicks_submit_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 37237900,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "The new moon should not be added",
+            "match": {
+              "location": "com.revature.step.AddMoonSteps.the_new_moon_should_not_be_added()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddMoons"
+          },
+          {
+            "name": "@REV-TC-32"
+          },
+          {
+            "name": "@JREQ-REV-48"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-12T15:24:51.693Z",
+        "line": 90,
+        "name": "Negative Scenario Empty moon name",
+        "description": "\tan empty moon name, a user should not be able to add a new moon",
+        "id": "addmoons;negative-scenario-empty-moon-name;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9090400,
+              "status": "passed"
+            },
+            "line": 81,
+            "name": "The user is logged in",
+            "match": {
+              "location": "com.revature.step.AddMoonSteps.the_user_is_logged_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 137937100,
+              "status": "passed"
+            },
+            "line": 82,
+            "name": "The user should pick moon option from dropdown",
+            "match": {
+              "location": "com.revature.step.AddMoonSteps.the_user_should_pick_moon_option_from_dropdown()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 145136600,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "The user enters Id \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.revature.step.AddMoonSteps.the_user_enters_Id(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 69915000,
+              "status": "passed"
+            },
+            "line": 84,
+            "name": "The user provides a \"moon-1.jpg\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"moon-1.jpg\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.revature.step.AddMoonSteps.the_user_provides_a(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 86806800,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "The user clicks submit button",
+            "match": {
+              "location": "com.revature.step.AddMoonSteps.the_user_clicks_submit_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 572896600,
+              "status": "passed"
+            },
+            "line": 86,
+            "name": "The new moon should not be added",
+            "match": {
+              "location": "com.revature.step.AddMoonSteps.the_new_moon_should_not_be_added()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddMoons"
+          },
+          {
+            "name": "@REV-TC-33"
+          },
+          {
+            "name": "@JREQ-REV-49"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-08-12T15:24:52.734Z",
+        "line": 105,
+        "name": "Negative Scenario Invalid image format",
+        "description": "\ta valid moon name and an invalid image format, a user should not be able to add a new moon",
+        "id": "addmoons;negative-scenario-invalid-image-format;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 413931700,
+              "status": "passed"
+            },
+            "line": 95,
+            "name": "The user logged in",
+            "match": {
+              "location": "com.revature.step.RemoveMoonSteps.the_user_logged_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 129978400,
+              "status": "passed"
+            },
+            "line": 96,
+            "name": "The user should pick moon option from dropdown",
+            "match": {
+              "location": "com.revature.step.AddMoonSteps.the_user_should_pick_moon_option_from_dropdown()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 116112000,
+              "status": "passed"
+            },
+            "line": 97,
+            "name": "The user enters a \"MoonNameWithInvalidImage\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"MoonNameWithInvalidImage\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.revature.step.AddMoonSteps.the_user_enters_a(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 78313100,
+              "status": "passed"
+            },
+            "line": 98,
+            "name": "The user enters Id \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.revature.step.AddMoonSteps.the_user_enters_Id(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 243577900,
+              "status": "passed"
+            },
+            "line": 99,
+            "name": "The user provides a \"luna.txt\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"luna.txt\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.revature.step.AddMoonSteps.the_user_provides_a(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 102563900,
+              "status": "passed"
+            },
+            "line": 100,
+            "name": "The user clicks submit button",
+            "match": {
+              "location": "com.revature.step.AddMoonSteps.the_user_clicks_submit_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: The moon is not added.\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertFalse(Assert.java:65)\r\n\tat com.revature.step.AddMoonSteps.the_new_moon_should_not_be_added(AddMoonSteps.java:121)\r\n\tat ✽.The new moon should not be added(classpath:features/AddMoons.feature:101)\r\n",
+              "duration": 271501300,
+              "status": "failed"
+            },
+            "line": 101,
+            "name": "The new moon should not be added",
+            "match": {
+              "location": "com.revature.step.AddMoonSteps.the_new_moon_should_not_be_added()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddMoons"
+          },
+          {
+            "name": "@REV-TC-34"
+          },
+          {
+            "name": "@JREQ-REV-78"
+          },
+          {
+            "name": "@JREQ-REV-50"
+          }
+        ]
+      }
+    ],
+    "name": "AddMoons",
+    "description": "",
+    "id": "addmoons",
+    "keyword": "Feature",
+    "uri": "classpath:features/AddMoons.feature",
+    "tags": [
+      {
+        "name": "@AddMoons",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2024-08-12T15:24:54.102Z",
         "line": 16,
         "name": "Positive Scenario Add Planet with image",
         "description": "\tA user should be able to add a new planet with a valid planet name",
@@ -13,20 +1997,20 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : login attempt failed: please try again}\n  (Session info: chrome\u003d127.0.6533.89): login attempt failed: please try again\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.23\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [11a02683f33cc7f2a63f3067f3c13145, getTitle {}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\\Users\\Admin\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58726}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58726/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 11a02683f33cc7f2a63f3067f3c13145\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:307)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$1.apply(ExpectedConditions.java:55)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$1.apply(ExpectedConditions.java:50)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)\r\n\tat com.revature.step.LoginSteps.the_user_should_be_logged_in_successfully_and_redirected_to_homepage(LoginSteps.java:56)\r\n\tat com.revature.step.LoginSteps.the_user_is_logged_in_to_the_planetarium(LoginSteps.java:74)\r\n\tat ✽.The user is logged in to the planetarium(classpath:features/AddPlanets.feature:7)\r\n",
-              "duration": 383610700,
-              "status": "failed"
+              "duration": 431901600,
+              "status": "passed"
             },
             "line": 7,
-            "name": "The user is logged in to the planetarium",
+            "name": "The user is logged in",
             "match": {
-              "location": "com.revature.step.LoginSteps.the_user_is_logged_in_to_the_planetarium()"
+              "location": "com.revature.step.AddMoonSteps.the_user_is_logged_in()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 168729700,
+              "status": "passed"
             },
             "line": 8,
             "name": "The user selects Planet from the drop down menu",
@@ -37,7 +2021,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 481297200,
+              "status": "passed"
             },
             "line": 9,
             "name": "The user provides \"UmbrabilisOrchisExquisiteThrow\" for planet name",
@@ -54,8 +2039,8 @@
           },
           {
             "result": {
-              "duration": 1000900,
-              "status": "skipped"
+              "duration": 83724300,
+              "status": "passed"
             },
             "line": 10,
             "name": "The user provides a valid planet image",
@@ -66,7 +2051,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 117471700,
+              "status": "passed"
             },
             "line": 11,
             "name": "The user clicks the Submit Planet button",
@@ -77,7 +2063,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 206472400,
+              "status": "passed"
             },
             "line": 12,
             "name": "The \"UmbrabilisOrchisExquisiteThrow\" planet should be added to the planetarium",
@@ -106,7 +2093,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-07T20:28:26.312Z",
+        "start_timestamp": "2024-08-12T15:24:55.664Z",
         "line": 30,
         "name": "Negative Scenario Invalid Planet name",
         "description": "\tA user should not be able to add a new planet with an invalid planet name",
@@ -116,20 +2103,20 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : login attempt failed: please try again}\n  (Session info: chrome\u003d127.0.6533.89): login attempt failed: please try again\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.23\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [11a02683f33cc7f2a63f3067f3c13145, getTitle {}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\\Users\\Admin\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58726}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58726/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 11a02683f33cc7f2a63f3067f3c13145\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:307)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$1.apply(ExpectedConditions.java:55)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$1.apply(ExpectedConditions.java:50)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)\r\n\tat com.revature.step.LoginSteps.the_user_should_be_logged_in_successfully_and_redirected_to_homepage(LoginSteps.java:56)\r\n\tat com.revature.step.LoginSteps.the_user_is_logged_in_to_the_planetarium(LoginSteps.java:74)\r\n\tat ✽.The user is logged in to the planetarium(classpath:features/AddPlanets.feature:21)\r\n",
-              "duration": 704459200,
-              "status": "failed"
+              "duration": 649122900,
+              "status": "passed"
             },
             "line": 21,
-            "name": "The user is logged in to the planetarium",
+            "name": "The user is logged in",
             "match": {
-              "location": "com.revature.step.LoginSteps.the_user_is_logged_in_to_the_planetarium()"
+              "location": "com.revature.step.AddMoonSteps.the_user_is_logged_in()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 271048900,
+              "status": "passed"
             },
             "line": 22,
             "name": "The user selects Planet from the drop down menu",
@@ -140,8 +2127,8 @@
           },
           {
             "result": {
-              "duration": 1447800,
-              "status": "skipped"
+              "duration": 295188400,
+              "status": "passed"
             },
             "line": 23,
             "name": "The user provides \"Bait-and-Switch Dealers Sleight\" for planet name",
@@ -158,7 +2145,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 48144100,
+              "status": "passed"
             },
             "line": 24,
             "name": "The user provides a valid planet image",
@@ -169,7 +2157,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 311440600,
+              "status": "passed"
             },
             "line": 25,
             "name": "The user clicks the Submit Planet button",
@@ -180,7 +2169,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 242583900,
+              "status": "passed"
             },
             "line": 26,
             "name": "The \"Bait-and-Switch Dealers Sleight\" planet should not be added to the planetarium",
@@ -204,15 +2194,15 @@
             "name": "@REV-TC-20"
           },
           {
-            "name": "@JREQ-REV-76"
+            "name": "@JREQ-REV-35"
           },
           {
-            "name": "@JREQ-REV-35"
+            "name": "@JREQ-REV-32"
           }
         ]
       },
       {
-        "start_timestamp": "2024-08-07T20:28:27.048Z",
+        "start_timestamp": "2024-08-12T15:24:57.595Z",
         "line": 31,
         "name": "Negative Scenario Invalid Planet name",
         "description": "\tA user should not be able to add a new planet with an invalid planet name",
@@ -222,21 +2212,20 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : login attempt failed: please try again}\n  (Session info: chrome\u003d127.0.6533.89): login attempt failed: please try again\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.23\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [11a02683f33cc7f2a63f3067f3c13145, getTitle {}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\\Users\\Admin\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58726}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58726/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 11a02683f33cc7f2a63f3067f3c13145\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:307)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$1.apply(ExpectedConditions.java:55)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$1.apply(ExpectedConditions.java:50)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)\r\n\tat com.revature.step.LoginSteps.the_user_should_be_logged_in_successfully_and_redirected_to_homepage(LoginSteps.java:56)\r\n\tat com.revature.step.LoginSteps.the_user_is_logged_in_to_the_planetarium(LoginSteps.java:74)\r\n\tat ✽.The user is logged in to the planetarium(classpath:features/AddPlanets.feature:21)\r\n",
-              "duration": 716002100,
-              "status": "failed"
+              "duration": 527807300,
+              "status": "passed"
             },
             "line": 21,
-            "name": "The user is logged in to the planetarium",
+            "name": "The user is logged in",
             "match": {
-              "location": "com.revature.step.LoginSteps.the_user_is_logged_in_to_the_planetarium()"
+              "location": "com.revature.step.AddMoonSteps.the_user_is_logged_in()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1004400,
-              "status": "skipped"
+              "duration": 162804000,
+              "status": "passed"
             },
             "line": 22,
             "name": "The user selects Planet from the drop down menu",
@@ -247,7 +2236,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 215337500,
+              "status": "passed"
             },
             "line": 23,
             "name": "The user provides \"Earth\" for planet name",
@@ -264,8 +2254,8 @@
           },
           {
             "result": {
-              "duration": 1003900,
-              "status": "skipped"
+              "duration": 283679800,
+              "status": "passed"
             },
             "line": 24,
             "name": "The user provides a valid planet image",
@@ -276,8 +2266,8 @@
           },
           {
             "result": {
-              "duration": 996200,
-              "status": "skipped"
+              "duration": 200546100,
+              "status": "passed"
             },
             "line": 25,
             "name": "The user clicks the Submit Planet button",
@@ -288,7 +2278,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 233337000,
+              "status": "passed"
             },
             "line": 26,
             "name": "The \"Earth\" planet should not be added to the planetarium",
@@ -312,15 +2303,15 @@
             "name": "@REV-TC-20"
           },
           {
-            "name": "@JREQ-REV-76"
+            "name": "@JREQ-REV-35"
           },
           {
-            "name": "@JREQ-REV-35"
+            "name": "@JREQ-REV-32"
           }
         ]
       },
       {
-        "start_timestamp": "2024-08-07T20:28:27.800Z",
+        "start_timestamp": "2024-08-12T15:24:59.233Z",
         "line": 34,
         "name": "Negative Scenario Empty planet name",
         "description": "\tA user should not be able to add a new planet with an empty planet name",
@@ -330,20 +2321,20 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : login attempt failed: please try again}\n  (Session info: chrome\u003d127.0.6533.89): login attempt failed: please try again\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.23\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [11a02683f33cc7f2a63f3067f3c13145, getTitle {}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\\Users\\Admin\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58726}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58726/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 11a02683f33cc7f2a63f3067f3c13145\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:307)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$1.apply(ExpectedConditions.java:55)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$1.apply(ExpectedConditions.java:50)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)\r\n\tat com.revature.step.LoginSteps.the_user_should_be_logged_in_successfully_and_redirected_to_homepage(LoginSteps.java:56)\r\n\tat com.revature.step.LoginSteps.the_user_is_logged_in_to_the_planetarium(LoginSteps.java:74)\r\n\tat ✽.The user is logged in to the planetarium(classpath:features/AddPlanets.feature:36)\r\n",
-              "duration": 691131700,
-              "status": "failed"
+              "duration": 597404400,
+              "status": "passed"
             },
             "line": 36,
-            "name": "The user is logged in to the planetarium",
+            "name": "The user is logged in",
             "match": {
-              "location": "com.revature.step.LoginSteps.the_user_is_logged_in_to_the_planetarium()"
+              "location": "com.revature.step.AddMoonSteps.the_user_is_logged_in()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 245983900,
+              "status": "passed"
             },
             "line": 37,
             "name": "The user selects Planet from the drop down menu",
@@ -354,7 +2345,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 196990700,
+              "status": "passed"
             },
             "line": 38,
             "name": "The user provides an empty planet name",
@@ -365,7 +2357,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 56825900,
+              "status": "passed"
             },
             "line": 39,
             "name": "The user provides a valid planet image",
@@ -376,7 +2369,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 316892500,
+              "status": "passed"
             },
             "line": 40,
             "name": "The user clicks the Submit Planet button",
@@ -387,7 +2381,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 248050400,
+              "status": "passed"
             },
             "line": 41,
             "name": "The empty planet name should not be added to the planetarium",
@@ -410,7 +2405,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-07T20:28:28.501Z",
+        "start_timestamp": "2024-08-12T15:25:00.920Z",
         "line": 55,
         "name": "Negative Scenario Invalid image format",
         "description": "\tA user should not be able to add a new planet with a valid planet name and invalid image format",
@@ -420,20 +2415,20 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : login attempt failed: please try again}\n  (Session info: chrome\u003d127.0.6533.89): login attempt failed: please try again\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.23\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [11a02683f33cc7f2a63f3067f3c13145, getTitle {}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\\Users\\Admin\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58726}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58726/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 11a02683f33cc7f2a63f3067f3c13145\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:307)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$1.apply(ExpectedConditions.java:55)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$1.apply(ExpectedConditions.java:50)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)\r\n\tat com.revature.step.LoginSteps.the_user_should_be_logged_in_successfully_and_redirected_to_homepage(LoginSteps.java:56)\r\n\tat com.revature.step.LoginSteps.the_user_is_logged_in_to_the_planetarium(LoginSteps.java:74)\r\n\tat ✽.The user is logged in to the planetarium(classpath:features/AddPlanets.feature:46)\r\n",
-              "duration": 692575400,
-              "status": "failed"
+              "duration": 427682200,
+              "status": "passed"
             },
             "line": 46,
-            "name": "The user is logged in to the planetarium",
+            "name": "The user is logged in",
             "match": {
-              "location": "com.revature.step.LoginSteps.the_user_is_logged_in_to_the_planetarium()"
+              "location": "com.revature.step.AddMoonSteps.the_user_is_logged_in()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 166746100,
+              "status": "passed"
             },
             "line": 47,
             "name": "The user selects Planet from the drop down menu",
@@ -444,7 +2439,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 140293100,
+              "status": "passed"
             },
             "line": 48,
             "name": "The user provides \"Venus\" for planet name",
@@ -461,7 +2457,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 52299000,
+              "status": "passed"
             },
             "line": 49,
             "name": "The user provides an invalid image format",
@@ -472,7 +2469,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 353002600,
+              "status": "passed"
             },
             "line": 50,
             "name": "The user clicks the Submit Planet button",
@@ -483,7 +2481,9 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 2 second(s) with 500 milliseconds interval)\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002722.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\\Users\\vasd5\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50425/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 189d603c745845601de31fa321b5ccd1\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)\r\n\tat com.revature.step.AddPlanetSteps.the_planet_should_not_be_added_to_planetarium(AddPlanetSteps.java:44)\r\n\tat ✽.The \"Venus\" planet should not be added to the planetarium(classpath:features/AddPlanets.feature:51)\r\n",
+              "duration": 2294263600,
+              "status": "failed"
             },
             "line": 51,
             "name": "The \"Venus\" planet should not be added to the planetarium",
@@ -507,7 +2507,7 @@
             "name": "@REV-TC-23"
           },
           {
-            "name": "@JREQ-REV-75"
+            "name": "@JREQ-REV-82"
           },
           {
             "name": "@JREQ-REV-34"
@@ -515,7 +2515,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-07T20:28:29.211Z",
+        "start_timestamp": "2024-08-12T15:25:04.500Z",
         "line": 68,
         "name": "Positive Scenario Planet added without image",
         "description": "\tA user should be able to add a new planet with a valid planet name and no image",
@@ -525,20 +2525,20 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : login attempt failed: please try again}\n  (Session info: chrome\u003d127.0.6533.89): login attempt failed: please try again\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.23\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [11a02683f33cc7f2a63f3067f3c13145, getTitle {}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\\Users\\Admin\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58726}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58726/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 11a02683f33cc7f2a63f3067f3c13145\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:307)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$1.apply(ExpectedConditions.java:55)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$1.apply(ExpectedConditions.java:50)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)\r\n\tat com.revature.step.LoginSteps.the_user_should_be_logged_in_successfully_and_redirected_to_homepage(LoginSteps.java:56)\r\n\tat com.revature.step.LoginSteps.the_user_is_logged_in_to_the_planetarium(LoginSteps.java:74)\r\n\tat ✽.The user is logged in to the planetarium(classpath:features/AddPlanets.feature:60)\r\n",
-              "duration": 680400800,
-              "status": "failed"
+              "duration": 1041278300,
+              "status": "passed"
             },
             "line": 60,
-            "name": "The user is logged in to the planetarium",
+            "name": "The user is logged in",
             "match": {
-              "location": "com.revature.step.LoginSteps.the_user_is_logged_in_to_the_planetarium()"
+              "location": "com.revature.step.AddMoonSteps.the_user_is_logged_in()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 556638000,
+              "status": "passed"
             },
             "line": 61,
             "name": "The user selects Planet from the drop down menu",
@@ -549,7 +2549,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 130825200,
+              "status": "passed"
             },
             "line": 62,
             "name": "The user provides \"Neptune\" for planet name",
@@ -566,7 +2567,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 467419800,
+              "status": "passed"
             },
             "line": 63,
             "name": "The user clicks the Submit Planet button",
@@ -577,7 +2579,9 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat com.revature.step.AddPlanetSteps.the_planet_should_be_added_to_planetarium(AddPlanetSteps.java:38)\r\n\tat ✽.The \"Neptune\" planet should be added to the planetarium(classpath:features/AddPlanets.feature:64)\r\n",
+              "duration": 1251279200,
+              "status": "failed"
             },
             "line": 64,
             "name": "The \"Neptune\" planet should be added to the planetarium",
@@ -601,7 +2605,7 @@
             "name": "@REV-TC-24"
           },
           {
-            "name": "@JREQ-REV-74"
+            "name": "@JREQ-REV-83"
           },
           {
             "name": "@JREQ-REV-36"
@@ -629,7 +2633,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-08-07T20:28:29.908Z",
+        "start_timestamp": "2024-08-12T15:25:07.973Z",
         "line": 14,
         "name": "Positive scenario user login",
         "description": "",
@@ -639,7 +2643,7 @@
         "steps": [
           {
             "result": {
-              "duration": 24957300,
+              "duration": 85047600,
               "status": "passed"
             },
             "line": 6,
@@ -651,7 +2655,7 @@
           },
           {
             "result": {
-              "duration": 62601400,
+              "duration": 162076200,
               "status": "passed"
             },
             "line": 7,
@@ -669,7 +2673,7 @@
           },
           {
             "result": {
-              "duration": 61075400,
+              "duration": 121691000,
               "status": "passed"
             },
             "line": 8,
@@ -687,7 +2691,7 @@
           },
           {
             "result": {
-              "duration": 31351600,
+              "duration": 199995500,
               "status": "passed"
             },
             "line": 9,
@@ -699,9 +2703,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : login attempt failed: please try again}\n  (Session info: chrome\u003d127.0.6533.89): login attempt failed: please try again\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.23\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [11a02683f33cc7f2a63f3067f3c13145, getTitle {}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\\Users\\Admin\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58726}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58726/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 11a02683f33cc7f2a63f3067f3c13145\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:307)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$1.apply(ExpectedConditions.java:55)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$1.apply(ExpectedConditions.java:50)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)\r\n\tat com.revature.step.LoginSteps.the_user_should_be_logged_in_successfully_and_redirected_to_homepage(LoginSteps.java:56)\r\n\tat ✽.The user should be logged in successfully and redirected to homepage(classpath:features/Login.feature:10)\r\n",
-              "duration": 6744600,
-              "status": "failed"
+              "duration": 123034900,
+              "status": "passed"
             },
             "line": 10,
             "name": "The user should be logged in successfully and redirected to homepage",
@@ -724,7 +2727,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-07T20:28:30.107Z",
+        "start_timestamp": "2024-08-12T15:25:08.752Z",
         "line": 26,
         "name": "Negative Scenario Invalid password",
         "description": "",
@@ -734,9 +2737,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : login attempt failed: please try again}\n  (Session info: chrome\u003d127.0.6533.89): login attempt failed: please try again\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.23\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [11a02683f33cc7f2a63f3067f3c13145, get {url\u003dhttp://localhost:8080}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\\Users\\Admin\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58726}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58726/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 11a02683f33cc7f2a63f3067f3c13145\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:302)\r\n\tat com.revature.pom.LoginPage.openLoginPage(LoginPage.java:35)\r\n\tat com.revature.step.LoginSteps.the_user_navigates_to_the_landing_page(LoginSteps.java:16)\r\n\tat ✽.The user navigates to the landing page(classpath:features/Login.feature:18)\r\n",
-              "duration": 5012200,
-              "status": "failed"
+              "duration": 163514400,
+              "status": "passed"
             },
             "line": 18,
             "name": "The user navigates to the landing page",
@@ -747,7 +2749,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 169625700,
+              "status": "passed"
             },
             "line": 19,
             "name": "The user enters username \"CarlSagan\"",
@@ -764,7 +2767,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 123972800,
+              "status": "passed"
             },
             "line": 20,
             "name": "The user enters invalid password \"Galaxy@2023\"",
@@ -781,7 +2785,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 100112600,
+              "status": "passed"
             },
             "line": 21,
             "name": "The user clicks the login button",
@@ -792,7 +2797,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 24962300,
+              "status": "passed"
             },
             "line": 22,
             "name": "The user should be informed that the login failed",
@@ -815,7 +2821,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-07T20:28:30.123Z",
+        "start_timestamp": "2024-08-12T15:25:09.350Z",
         "line": 38,
         "name": "Negative Scenario Invalid username",
         "description": "",
@@ -825,7 +2831,7 @@
         "steps": [
           {
             "result": {
-              "duration": 18519200,
+              "duration": 42454500,
               "status": "passed"
             },
             "line": 30,
@@ -837,7 +2843,7 @@
           },
           {
             "result": {
-              "duration": 70043000,
+              "duration": 153597800,
               "status": "passed"
             },
             "line": 31,
@@ -855,7 +2861,7 @@
           },
           {
             "result": {
-              "duration": 63053500,
+              "duration": 202961600,
               "status": "passed"
             },
             "line": 32,
@@ -873,7 +2879,7 @@
           },
           {
             "result": {
-              "duration": 30256100,
+              "duration": 82838200,
               "status": "passed"
             },
             "line": 33,
@@ -885,7 +2891,7 @@
           },
           {
             "result": {
-              "duration": 17244100,
+              "duration": 22439200,
               "status": "passed"
             },
             "line": 34,
@@ -909,7 +2915,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-07T20:28:30.329Z",
+        "start_timestamp": "2024-08-12T15:25:09.868Z",
         "line": 50,
         "name": "Negative scenario empty username",
         "description": "",
@@ -919,7 +2925,7 @@
         "steps": [
           {
             "result": {
-              "duration": 19848700,
+              "duration": 41357100,
               "status": "passed"
             },
             "line": 42,
@@ -931,7 +2937,7 @@
           },
           {
             "result": {
-              "duration": 41541600,
+              "duration": 101064700,
               "status": "passed"
             },
             "line": 43,
@@ -949,7 +2955,7 @@
           },
           {
             "result": {
-              "duration": 59083100,
+              "duration": 127506100,
               "status": "passed"
             },
             "line": 44,
@@ -967,7 +2973,7 @@
           },
           {
             "result": {
-              "duration": 32938100,
+              "duration": 134543100,
               "status": "passed"
             },
             "line": 45,
@@ -979,7 +2985,7 @@
           },
           {
             "result": {
-              "duration": 14926600,
+              "duration": 17938800,
               "status": "passed"
             },
             "line": 46,
@@ -1003,7 +3009,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-07T20:28:30.503Z",
+        "start_timestamp": "2024-08-12T15:25:10.362Z",
         "line": 62,
         "name": "Negative scenario empty password",
         "description": "",
@@ -1013,7 +3019,7 @@
         "steps": [
           {
             "result": {
-              "duration": 19093800,
+              "duration": 172476900,
               "status": "passed"
             },
             "line": 54,
@@ -1025,7 +3031,7 @@
           },
           {
             "result": {
-              "duration": 54372100,
+              "duration": 154315900,
               "status": "passed"
             },
             "line": 55,
@@ -1043,7 +3049,7 @@
           },
           {
             "result": {
-              "duration": 36047000,
+              "duration": 157462500,
               "status": "passed"
             },
             "line": 56,
@@ -1061,7 +3067,7 @@
           },
           {
             "result": {
-              "duration": 30713600,
+              "duration": 178742800,
               "status": "passed"
             },
             "line": 57,
@@ -1073,7 +3079,7 @@
           },
           {
             "result": {
-              "duration": 15510300,
+              "duration": 18420600,
               "status": "passed"
             },
             "line": 58,
@@ -1117,1118 +3123,245 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-08-07T20:28:30.663Z",
-        "line": 17,
-        "name": "Positive Scenario user registration",
-        "description": "",
-        "id": "registration;positive-scenario-user-registration;;2",
+        "start_timestamp": "2024-08-12T15:25:11.057Z",
+        "line": 14,
+        "name": "Positive Scenario Authorized user",
+        "description": "\ta valid moon name, a user should be able to remove a moon from the Planetarium associated with planet they added",
+        "id": "removemoons;positive-scenario-authorized-user;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 19125600,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "The user navigates to the landing page",
-            "match": {
-              "location": "com.revature.step.LoginSteps.the_user_navigates_to_the_landing_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 74513500,
+              "duration": 455328700,
               "status": "passed"
             },
             "line": 7,
-            "name": "The user clicks Create Account link and is redirected to the registration page",
+            "name": "The user is logged in",
             "match": {
-              "location": "com.revature.step.RegistrationSteps.the_user_clicks_Create_Account_link_and_is_redirected_to_the_registration_page()"
+              "location": "com.revature.step.AddMoonSteps.the_user_is_logged_in()"
             },
-            "keyword": "When "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 54395900,
+              "duration": 167222600,
               "status": "passed"
             },
             "line": 8,
-            "name": "The user provides a valid username \"CarlSagan2\"",
+            "name": "The user should pick moon option from dropdown",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"CarlSagan2\"",
-                  "offset": 35
-                }
-              ],
-              "location": "com.revature.step.RegistrationSteps.the_user_provides_a_valid_username(java.lang.String)"
+              "location": "com.revature.step.AddMoonSteps.the_user_should_pick_moon_option_from_dropdown()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 59395700,
+              "duration": 128739300,
               "status": "passed"
             },
             "line": 9,
-            "name": "The user provides a valid password \"Cosmos2@2024\"",
+            "name": "The user enters a \"Luna\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Cosmos2@2024\"",
-                  "offset": 35
+                  "val": "\"Luna\"",
+                  "offset": 18
                 }
               ],
-              "location": "com.revature.step.RegistrationSteps.the_user_provides_a_valid_password(java.lang.String)"
+              "location": "com.revature.step.AddMoonSteps.the_user_enters_a(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 31713600,
+              "duration": 2579681100,
               "status": "passed"
             },
             "line": 10,
-            "name": "The user clicks the Create button",
+            "name": "The moon should be removed",
             "match": {
-              "location": "com.revature.step.RegistrationSteps.the_user_clicks_the_Create_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 532098400,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "The user is alerted that Account created successfully with username \"CarlSagan2\" and password \"Cosmos2@2024\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"CarlSagan2\"",
-                  "offset": 68
-                },
-                {
-                  "val": "\"Cosmos2@2024\"",
-                  "offset": 94
-                }
-              ],
-              "location": "com.revature.step.RegistrationSteps.theUserIsAlertedThatAccountCreatedSuccessfullyWithUsernameAndPassword(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 13742700,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "The user clicks OK to dismiss the alert",
-            "match": {
-              "location": "com.revature.step.RegistrationSteps.the_user_clicks_OK_to_dismiss_the_alert()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 31146200,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "The user is redirected to the login page",
-            "match": {
-              "location": "com.revature.step.RegistrationSteps.the_user_is_redirected_to_the_login_page()"
+              "location": "com.revature.step.RemoveMoonSteps.the_moon_should_be_removed()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Registration"
+            "name": "@RemoveMoons"
           },
           {
-            "name": "@REV-TC-2"
+            "name": "@REV-TC-35"
           },
           {
-            "name": "@JREQ-REV-3"
+            "name": "@JREQ-REV-55"
           }
         ]
       },
       {
-        "start_timestamp": "2024-08-07T20:28:31.493Z",
-        "line": 30,
-        "name": "Negative Scenario Username not unique",
-        "description": "",
-        "id": "registration;negative-scenario-username-not-unique;;2",
+        "start_timestamp": "2024-08-12T15:25:14.399Z",
+        "line": 26,
+        "name": "Negative Scenario Unauthorized user : Error Guessing test",
+        "description": "\tan unauthorized user, attempting to remove a moon should fail",
+        "id": "removemoons;negative-scenario-unauthorized-user-:-error-guessing-test;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 17139100,
+              "duration": 386737000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "The user logged in",
+            "match": {
+              "location": "com.revature.step.RemoveMoonSteps.the_user_logged_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 118646800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "The user should pick moon option from dropdown",
+            "match": {
+              "location": "com.revature.step.AddMoonSteps.the_user_should_pick_moon_option_from_dropdown()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 107168800,
               "status": "passed"
             },
             "line": 21,
-            "name": "The user navigates to the landing page",
+            "name": "The user enters a \"Titan\"",
             "match": {
-              "location": "com.revature.step.LoginSteps.the_user_navigates_to_the_landing_page()"
+              "arguments": [
+                {
+                  "val": "\"Titan\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.revature.step.AddMoonSteps.the_user_enters_a(java.lang.String)"
             },
-            "keyword": "Given "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 66530100,
+              "duration": 2657362900,
               "status": "passed"
             },
             "line": 22,
-            "name": "The user clicks Create Account link and is redirected to the registration page",
+            "name": "The moon should not be removed",
             "match": {
-              "location": "com.revature.step.RegistrationSteps.the_user_clicks_Create_Account_link_and_is_redirected_to_the_registration_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 52528600,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "The user provides a non-unique username \"Galileo\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Galileo\"",
-                  "offset": 40
-                }
-              ],
-              "location": "com.revature.step.RegistrationSteps.the_user_provides_a_non_unique_username(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 54382400,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "The user provides a valid password \"CosmosNoNums\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"CosmosNoNums\"",
-                  "offset": 35
-                }
-              ],
-              "location": "com.revature.step.RegistrationSteps.the_user_provides_a_valid_password(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 30522800,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "The user clicks the Create button",
-            "match": {
-              "location": "com.revature.step.RegistrationSteps.the_user_clicks_the_Create_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 549277000,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "The user is alerted that Account creation failed with username \"Galileo\" and password \"CosmosNoNums\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Galileo\"",
-                  "offset": 63
-                },
-                {
-                  "val": "\"CosmosNoNums\"",
-                  "offset": 86
-                }
-              ],
-              "location": "com.revature.step.RegistrationSteps.the_user_is_alerted_that_Account_creation_failed_with_username_and_password(java.lang.String,java.lang.String)"
+              "location": "com.revature.step.RemoveMoonSteps.the_moon_should_not_be_removed()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Registration"
+            "name": "@RemoveMoons"
           },
           {
-            "name": "@REV-TC-3"
+            "name": "@REV-TC-36"
           },
           {
-            "name": "@JREQ-REV-5"
+            "name": "@JREQ-REV-80"
+          },
+          {
+            "name": "@JREQ-REV-57"
           }
         ]
       },
       {
-        "start_timestamp": "2024-08-07T20:28:32.274Z",
-        "line": 43,
-        "name": "Negative scenario username too long",
-        "description": "",
-        "id": "registration;negative-scenario-username-too-long;;2",
+        "start_timestamp": "2024-08-12T15:25:17.677Z",
+        "line": 38,
+        "name": "Negative Scenario Removing non-existent moon",
+        "description": "\ta non-existent moon, attempting to remove it should fail",
+        "id": "removemoons;negative-scenario-removing-non-existent-moon;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 37954300,
+              "duration": 329566500,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "The user logged in",
+            "match": {
+              "location": "com.revature.step.RemoveMoonSteps.the_user_logged_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 169683200,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "The user should pick moon option from dropdown",
+            "match": {
+              "location": "com.revature.step.AddMoonSteps.the_user_should_pick_moon_option_from_dropdown()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 86776900,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "The user enters a \"Phobos\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Phobos\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.revature.step.AddMoonSteps.the_user_enters_a(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2599061900,
               "status": "passed"
             },
             "line": 34,
-            "name": "The user navigates to the landing page",
+            "name": "The moon should not be removed",
             "match": {
-              "location": "com.revature.step.LoginSteps.the_user_navigates_to_the_landing_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 59417500,
-              "status": "passed"
-            },
-            "line": 35,
-            "name": "The user clicks Create Account link and is redirected to the registration page",
-            "match": {
-              "location": "com.revature.step.RegistrationSteps.the_user_clicks_Create_Account_link_and_is_redirected_to_the_registration_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 105921700,
-              "status": "passed"
-            },
-            "line": 36,
-            "name": "The user provides a too long username \"CarlSagan_with_a_really_really_long_name\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"CarlSagan_with_a_really_really_long_name\"",
-                  "offset": 38
-                }
-              ],
-              "location": "com.revature.step.RegistrationSteps.the_user_enters_a_too_long_username(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 56566200,
-              "status": "passed"
-            },
-            "line": 37,
-            "name": "The user provides a valid password \"CosmosNoNums\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"CosmosNoNums\"",
-                  "offset": 35
-                }
-              ],
-              "location": "com.revature.step.RegistrationSteps.the_user_provides_a_valid_password(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 31211400,
-              "status": "passed"
-            },
-            "line": 38,
-            "name": "The user clicks the Create button",
-            "match": {
-              "location": "com.revature.step.RegistrationSteps.the_user_clicks_the_Create_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 12249600,
-              "status": "passed"
-            },
-            "line": 39,
-            "name": "The user is alerted that Account creation failed with username \"CarlSagan_with_a_really_really_long_name\" and password \"CosmosNoNums\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"CarlSagan_with_a_really_really_long_name\"",
-                  "offset": 63
-                },
-                {
-                  "val": "\"CosmosNoNums\"",
-                  "offset": 119
-                }
-              ],
-              "location": "com.revature.step.RegistrationSteps.the_user_is_alerted_that_Account_creation_failed_with_username_and_password(java.lang.String,java.lang.String)"
+              "location": "com.revature.step.RemoveMoonSteps.the_moon_should_not_be_removed()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Registration"
+            "name": "@RemoveMoons"
           },
           {
-            "name": "@REV-TC-4"
+            "name": "@REV-TC-37"
           },
           {
-            "name": "@JREQ-REV-6"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2024-08-07T20:28:32.584Z",
-        "line": 56,
-        "name": "Negative scenario empty username",
-        "description": "",
-        "id": "registration;negative-scenario-empty-username;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 30162000,
-              "status": "passed"
-            },
-            "line": 47,
-            "name": "The user navigates to the landing page",
-            "match": {
-              "location": "com.revature.step.LoginSteps.the_user_navigates_to_the_landing_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 61515500,
-              "status": "passed"
-            },
-            "line": 48,
-            "name": "The user clicks Create Account link and is redirected to the registration page",
-            "match": {
-              "location": "com.revature.step.RegistrationSteps.the_user_clicks_Create_Account_link_and_is_redirected_to_the_registration_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 36934600,
-              "status": "passed"
-            },
-            "line": 49,
-            "name": "The user provides an empty username",
-            "match": {
-              "location": "com.revature.step.RegistrationSteps.the_user_provides_an_empty_username()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 55503100,
-              "status": "passed"
-            },
-            "line": 50,
-            "name": "The user provides a valid password \"Cosmos@2024\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Cosmos@2024\"",
-                  "offset": 35
-                }
-              ],
-              "location": "com.revature.step.RegistrationSteps.the_user_provides_a_valid_password(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 30077800,
-              "status": "passed"
-            },
-            "line": 51,
-            "name": "The user clicks the Create button",
-            "match": {
-              "location": "com.revature.step.RegistrationSteps.the_user_clicks_the_Create_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 11393500,
-              "status": "passed"
-            },
-            "line": 52,
-            "name": "The user is alerted that Account creation failed with username \"\" and password \"Cosmos@2024\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"\"",
-                  "offset": 63
-                },
-                {
-                  "val": "\"Cosmos@2024\"",
-                  "offset": 79
-                }
-              ],
-              "location": "com.revature.step.RegistrationSteps.the_user_is_alerted_that_Account_creation_failed_with_username_and_password(java.lang.String,java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Registration"
-          },
-          {
-            "name": "@REV-TC-7"
-          },
-          {
-            "name": "@JREQ-REV-9"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2024-08-07T20:28:32.817Z",
-        "line": 69,
-        "name": "Negative scenario empty password",
-        "description": "",
-        "id": "registration;negative-scenario-empty-password;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 29784100,
-              "status": "passed"
-            },
-            "line": 60,
-            "name": "The user navigates to the landing page",
-            "match": {
-              "location": "com.revature.step.LoginSteps.the_user_navigates_to_the_landing_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 66967100,
-              "status": "passed"
-            },
-            "line": 61,
-            "name": "The user clicks Create Account link and is redirected to the registration page",
-            "match": {
-              "location": "com.revature.step.RegistrationSteps.the_user_clicks_Create_Account_link_and_is_redirected_to_the_registration_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 60529600,
-              "status": "passed"
-            },
-            "line": 62,
-            "name": "The user provides a valid username \"CarlSagan\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"CarlSagan\"",
-                  "offset": 35
-                }
-              ],
-              "location": "com.revature.step.RegistrationSteps.the_user_provides_a_valid_username(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 36580300,
-              "status": "passed"
-            },
-            "line": 63,
-            "name": "The user provides an empty password",
-            "match": {
-              "location": "com.revature.step.RegistrationSteps.the_user_provides_an_empty_password()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 37016500,
-              "status": "passed"
-            },
-            "line": 64,
-            "name": "The user clicks the Create button",
-            "match": {
-              "location": "com.revature.step.RegistrationSteps.the_user_clicks_the_Create_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 13278600,
-              "status": "passed"
-            },
-            "line": 65,
-            "name": "The user is alerted that Account creation failed with username \"CarlSagan\" and password \"\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"CarlSagan\"",
-                  "offset": 63
-                },
-                {
-                  "val": "\"\"",
-                  "offset": 88
-                }
-              ],
-              "location": "com.revature.step.RegistrationSteps.the_user_is_alerted_that_Account_creation_failed_with_username_and_password(java.lang.String,java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Registration"
-          },
-          {
-            "name": "@REV-TC-8"
-          },
-          {
-            "name": "@JREQ-REV-10"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2024-08-07T20:28:33.067Z",
-        "line": 84,
-        "name": "Positive Scenario user registration Password length exactly 30 characters",
-        "description": "",
-        "id": "registration;positive-scenario-user-registration-password-length-exactly-30-characters;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 37828400,
-              "status": "passed"
-            },
-            "line": 73,
-            "name": "The user navigates to the landing page",
-            "match": {
-              "location": "com.revature.step.LoginSteps.the_user_navigates_to_the_landing_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 64124600,
-              "status": "passed"
-            },
-            "line": 74,
-            "name": "The user clicks Create Account link and is redirected to the registration page",
-            "match": {
-              "location": "com.revature.step.RegistrationSteps.the_user_clicks_Create_Account_link_and_is_redirected_to_the_registration_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 63294100,
-              "status": "passed"
-            },
-            "line": 75,
-            "name": "The user provides a valid username \"UniqueUsername\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"UniqueUsername\"",
-                  "offset": 35
-                }
-              ],
-              "location": "com.revature.step.RegistrationSteps.the_user_provides_a_valid_username(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 90112800,
-              "status": "passed"
-            },
-            "line": 76,
-            "name": "The user provides a password that is exactly thirty characters \"PasswordWithExactlyCharacters!\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"PasswordWithExactlyCharacters!\"",
-                  "offset": 63
-                }
-              ],
-              "location": "com.revature.step.RegistrationSteps.the_user_provides_a_password_that_is_exactly_thirty_characters(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 29961500,
-              "status": "passed"
-            },
-            "line": 77,
-            "name": "The user clicks the Create button",
-            "match": {
-              "location": "com.revature.step.RegistrationSteps.the_user_clicks_the_Create_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 519673100,
-              "status": "passed"
-            },
-            "line": 78,
-            "name": "The user is alerted that Account created successfully with username \"UniqueUsername\" and password \"PasswordWithExactlyCharacters!\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"UniqueUsername\"",
-                  "offset": 68
-                },
-                {
-                  "val": "\"PasswordWithExactlyCharacters!\"",
-                  "offset": 98
-                }
-              ],
-              "location": "com.revature.step.RegistrationSteps.theUserIsAlertedThatAccountCreatedSuccessfullyWithUsernameAndPassword(java.lang.String,java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 7179400,
-              "status": "passed"
-            },
-            "line": 79,
-            "name": "The user clicks OK to dismiss the alert",
-            "match": {
-              "location": "com.revature.step.RegistrationSteps.the_user_clicks_OK_to_dismiss_the_alert()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 21754900,
-              "status": "passed"
-            },
-            "line": 80,
-            "name": "The user is redirected to the login page",
-            "match": {
-              "location": "com.revature.step.RegistrationSteps.the_user_is_redirected_to_the_login_page()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Registration"
-          },
-          {
-            "name": "@REV-TC-39"
-          },
-          {
-            "name": "@JREQ-REV-12"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2024-08-07T20:28:33.907Z",
-        "line": 98,
-        "name": "Negative scenario password too long - new",
-        "description": "\tPassword greater than 30 characters",
-        "id": "registration;negative-scenario-password-too-long---new;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 17817700,
-              "status": "passed"
-            },
-            "line": 89,
-            "name": "The user navigates to the landing page",
-            "match": {
-              "location": "com.revature.step.LoginSteps.the_user_navigates_to_the_landing_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 67088300,
-              "status": "passed"
-            },
-            "line": 90,
-            "name": "The user clicks Create Account link and is redirected to the registration page",
-            "match": {
-              "location": "com.revature.step.RegistrationSteps.the_user_clicks_Create_Account_link_and_is_redirected_to_the_registration_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 57659600,
-              "status": "passed"
-            },
-            "line": 91,
-            "name": "The user provides a valid username \"CarlSagan\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"CarlSagan\"",
-                  "offset": 35
-                }
-              ],
-              "location": "com.revature.step.RegistrationSteps.the_user_provides_a_valid_username(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 122490400,
-              "status": "passed"
-            },
-            "line": 92,
-            "name": "The user provides a too long password \"ThisIsAVeryLongPasswordThatExceedsThirtyCharacters\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"ThisIsAVeryLongPasswordThatExceedsThirtyCharacters\"",
-                  "offset": 38
-                }
-              ],
-              "location": "com.revature.step.RegistrationSteps.the_user_provides_a_too_long_password(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 29718400,
-              "status": "passed"
-            },
-            "line": 93,
-            "name": "The user clicks the Create button",
-            "match": {
-              "location": "com.revature.step.RegistrationSteps.the_user_clicks_the_Create_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 14623700,
-              "status": "passed"
-            },
-            "line": 94,
-            "name": "The user is alerted that Account creation failed with username \"CarlSagan\" and password \"ThisIsAVeryLongPasswordThatExceedsThirtyCharacters\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"CarlSagan\"",
-                  "offset": 63
-                },
-                {
-                  "val": "\"ThisIsAVeryLongPasswordThatExceedsThirtyCharacters\"",
-                  "offset": 88
-                }
-              ],
-              "location": "com.revature.step.RegistrationSteps.the_user_is_alerted_that_Account_creation_failed_with_username_and_password(java.lang.String,java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Registration"
-          },
-          {
-            "name": "@REV-TC-42"
-          },
-          {
-            "name": "@JREQ-REV-7"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2024-08-07T20:28:34.219Z",
-        "line": 112,
-        "name": "Negative Scenario credentials too long - new",
-        "description": "\tBoth username and password greater than 30 characters each",
-        "id": "registration;negative-scenario-credentials-too-long---new;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 28438900,
-              "status": "passed"
-            },
-            "line": 103,
-            "name": "The user navigates to the landing page",
-            "match": {
-              "location": "com.revature.step.LoginSteps.the_user_navigates_to_the_landing_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 61579600,
-              "status": "passed"
-            },
-            "line": 104,
-            "name": "The user clicks Create Account link and is redirected to the registration page",
-            "match": {
-              "location": "com.revature.step.RegistrationSteps.the_user_clicks_Create_Account_link_and_is_redirected_to_the_registration_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 110886700,
-              "status": "passed"
-            },
-            "line": 105,
-            "name": "The user provides a too long username \"CarlSagan_with_a_really_really_long_name\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"CarlSagan_with_a_really_really_long_name\"",
-                  "offset": 38
-                }
-              ],
-              "location": "com.revature.step.RegistrationSteps.the_user_enters_a_too_long_username(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 124385400,
-              "status": "passed"
-            },
-            "line": 106,
-            "name": "The user provides a too long password \"ThisIsAVeryLongPasswordThatExceedsThirtyCharacters\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"ThisIsAVeryLongPasswordThatExceedsThirtyCharacters\"",
-                  "offset": 38
-                }
-              ],
-              "location": "com.revature.step.RegistrationSteps.the_user_provides_a_too_long_password(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 30360100,
-              "status": "passed"
-            },
-            "line": 107,
-            "name": "The user clicks the Create button",
-            "match": {
-              "location": "com.revature.step.RegistrationSteps.the_user_clicks_the_Create_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 18565700,
-              "status": "passed"
-            },
-            "line": 108,
-            "name": "The user is alerted that Account creation failed with username \"CarlSagan_with_a_really_really_long_name\" and password \"ThisIsAVeryLongPasswordThatExceedsThirtyCharacters\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"CarlSagan_with_a_really_really_long_name\"",
-                  "offset": 63
-                },
-                {
-                  "val": "\"ThisIsAVeryLongPasswordThatExceedsThirtyCharacters\"",
-                  "offset": 119
-                }
-              ],
-              "location": "com.revature.step.RegistrationSteps.the_user_is_alerted_that_Account_creation_failed_with_username_and_password(java.lang.String,java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Registration"
-          },
-          {
-            "name": "@REV-TC-43"
-          },
-          {
-            "name": "@JREQ-REV-8"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2024-08-07T20:28:34.598Z",
-        "line": 129,
-        "name": "Positive Scenario user registration Username length exactly 30 characters - new",
-        "description": "\tBoundary Analysis Username length 30 characters\n\tUsing a username with exactly 30 characters and valid password a user should be able to register an account",
-        "id": "registration;positive-scenario-user-registration-username-length-exactly-30-characters---new;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 26240500,
-              "status": "passed"
-            },
-            "line": 118,
-            "name": "The user navigates to the landing page",
-            "match": {
-              "location": "com.revature.step.LoginSteps.the_user_navigates_to_the_landing_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 61321900,
-              "status": "passed"
-            },
-            "line": 119,
-            "name": "The user clicks Create Account link and is redirected to the registration page",
-            "match": {
-              "location": "com.revature.step.RegistrationSteps.the_user_clicks_Create_Account_link_and_is_redirected_to_the_registration_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 91509400,
-              "status": "passed"
-            },
-            "line": 120,
-            "name": "The user provides a username that is exactly thirty characters \"UserWitExactlyThirtyCharacters\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"UserWitExactlyThirtyCharacters\"",
-                  "offset": 63
-                }
-              ],
-              "location": "com.revature.step.RegistrationSteps.the_user_provides_a_username_that_is_exactly_thirty_characters(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 54980200,
-              "status": "passed"
-            },
-            "line": 121,
-            "name": "The user provides a valid password \"Cosmos@2024\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Cosmos@2024\"",
-                  "offset": 35
-                }
-              ],
-              "location": "com.revature.step.RegistrationSteps.the_user_provides_a_valid_password(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 32688700,
-              "status": "passed"
-            },
-            "line": 122,
-            "name": "The user clicks the Create button",
-            "match": {
-              "location": "com.revature.step.RegistrationSteps.the_user_clicks_the_Create_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 526706400,
-              "status": "passed"
-            },
-            "line": 123,
-            "name": "The user is alerted that Account created successfully with username \"UserWitExactlyThirtyCharacters\" and password \"Cosmos@2024\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"UserWitExactlyThirtyCharacters\"",
-                  "offset": 68
-                },
-                {
-                  "val": "\"Cosmos@2024\"",
-                  "offset": 114
-                }
-              ],
-              "location": "com.revature.step.RegistrationSteps.theUserIsAlertedThatAccountCreatedSuccessfullyWithUsernameAndPassword(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 12332300,
-              "status": "passed"
-            },
-            "line": 124,
-            "name": "The user clicks OK to dismiss the alert",
-            "match": {
-              "location": "com.revature.step.RegistrationSteps.the_user_clicks_OK_to_dismiss_the_alert()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 29136800,
-              "status": "passed"
-            },
-            "line": 125,
-            "name": "The user is redirected to the login page",
-            "match": {
-              "location": "com.revature.step.RegistrationSteps.the_user_is_redirected_to_the_login_page()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Registration"
-          },
-          {
-            "name": "@REV-TC-44"
-          },
-          {
-            "name": "@JREQ-REV-11"
+            "name": "@JREQ-REV-58"
           }
         ]
       }
     ],
-    "name": "Registration",
+    "name": "RemoveMoons",
     "description": "",
-    "id": "registration",
+    "id": "removemoons",
     "keyword": "Feature",
-    "uri": "classpath:features/Registration.feature",
+    "uri": "classpath:features/RemoveMoons.feature",
     "tags": [
       {
-        "name": "@Registration",
+        "name": "@RemoveMoons",
         "type": "Tag",
         "location": {
           "line": 1,
@@ -2241,30 +3374,30 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-08-07T20:28:35.439Z",
-        "line": 14,
+        "start_timestamp": "2024-08-12T15:25:20.878Z",
+        "line": 5,
         "name": "Positive Scenario Remove Planet",
         "description": "",
-        "id": "removeplanets;positive-scenario-remove-planet;;2",
+        "id": "removeplanets;positive-scenario-remove-planet",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : login attempt failed: please try again}\n  (Session info: chrome\u003d127.0.6533.89): login attempt failed: please try again\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.23\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [11a02683f33cc7f2a63f3067f3c13145, getTitle {}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\\Users\\Admin\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58726}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58726/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 11a02683f33cc7f2a63f3067f3c13145\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:307)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$1.apply(ExpectedConditions.java:55)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$1.apply(ExpectedConditions.java:50)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)\r\n\tat com.revature.step.LoginSteps.the_user_should_be_logged_in_successfully_and_redirected_to_homepage(LoginSteps.java:56)\r\n\tat com.revature.step.LoginSteps.the_user_is_logged_in_to_the_planetarium(LoginSteps.java:74)\r\n\tat ✽.The user is logged in to the planetarium(classpath:features/RemovePlanets.feature:6)\r\n",
-              "duration": 711215300,
-              "status": "failed"
+              "duration": 791596700,
+              "status": "passed"
             },
             "line": 6,
-            "name": "The user is logged in to the planetarium",
+            "name": "The user is logged in",
             "match": {
-              "location": "com.revature.step.LoginSteps.the_user_is_logged_in_to_the_planetarium()"
+              "location": "com.revature.step.AddMoonSteps.the_user_is_logged_in()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 369152700,
+              "status": "passed"
             },
             "line": 7,
             "name": "The user selects Planet from the drop down menu",
@@ -2275,7 +3408,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 497551100,
+              "status": "passed"
             },
             "line": 8,
             "name": "The user provides a planet name: \"UmbrabilisOrchisExquisiteThrow\"",
@@ -2292,7 +3426,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 108784900,
+              "status": "passed"
             },
             "line": 9,
             "name": "The user clicks the Delete button",
@@ -2303,7 +3438,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 1095500200,
+              "status": "passed"
             },
             "line": 10,
             "name": "The planet, \"UmbrabilisOrchisExquisiteThrow\", should be removed from the planetarium",
@@ -2332,8 +3468,8 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-07T20:28:36.162Z",
-        "line": 26,
+        "start_timestamp": "2024-08-12T15:25:23.759Z",
+        "line": 22,
         "name": "Negative Scenario User does not own planet",
         "description": "",
         "id": "removeplanets;negative-scenario-user-does-not-own-planet;;2",
@@ -2342,22 +3478,22 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : login attempt failed: please try again}\n  (Session info: chrome\u003d127.0.6533.89): login attempt failed: please try again\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.23\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [11a02683f33cc7f2a63f3067f3c13145, getTitle {}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\\Users\\Admin\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58726}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58726/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 11a02683f33cc7f2a63f3067f3c13145\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:307)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$1.apply(ExpectedConditions.java:55)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$1.apply(ExpectedConditions.java:50)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)\r\n\tat com.revature.step.LoginSteps.the_user_should_be_logged_in_successfully_and_redirected_to_homepage(LoginSteps.java:56)\r\n\tat com.revature.step.LoginSteps.the_user_is_logged_in_to_the_planetarium(LoginSteps.java:74)\r\n\tat ✽.The user is logged in to the planetarium(classpath:features/RemovePlanets.feature:18)\r\n",
-              "duration": 783734200,
-              "status": "failed"
+              "duration": 439079200,
+              "status": "passed"
             },
-            "line": 18,
-            "name": "The user is logged in to the planetarium",
+            "line": 14,
+            "name": "The user is logged in",
             "match": {
-              "location": "com.revature.step.LoginSteps.the_user_is_logged_in_to_the_planetarium()"
+              "location": "com.revature.step.AddMoonSteps.the_user_is_logged_in()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 265762900,
+              "status": "passed"
             },
-            "line": 19,
+            "line": 15,
             "name": "The user selects Planet from the drop down menu",
             "match": {
               "location": "com.revature.step.AddPlanetSteps.the_user_selects_Planet_from_the_drop_down_menu()"
@@ -2366,9 +3502,10 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 327014000,
+              "status": "passed"
             },
-            "line": 20,
+            "line": 16,
             "name": "The user provides a planet name: \"Kazuha\"",
             "match": {
               "arguments": [
@@ -2383,9 +3520,10 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 45278400,
+              "status": "passed"
             },
-            "line": 21,
+            "line": 17,
             "name": "The user clicks the Delete button",
             "match": {
               "location": "com.revature.step.RemovePlanetSteps.theUserClicksTheDeleteButton()"
@@ -2394,9 +3532,10 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 66400200,
+              "status": "passed"
             },
-            "line": 22,
+            "line": 18,
             "name": "The planet should fail to be deleted",
             "match": {
               "location": "com.revature.step.RemovePlanetSteps.thePlanetShouldFailToBeDeleted()"
@@ -2412,7 +3551,7 @@
             "name": "@REV-TC-26"
           },
           {
-            "name": "@JREQ-REV-77"
+            "name": "@JREQ-REV-84"
           },
           {
             "name": "@JREQ-REV-41"
@@ -2420,8 +3559,8 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-07T20:28:36.951Z",
-        "line": 38,
+        "start_timestamp": "2024-08-12T15:25:24.909Z",
+        "line": 34,
         "name": "Negative Scenario Removing non-existing planet",
         "description": "",
         "id": "removeplanets;negative-scenario-removing-non-existing-planet;;2",
@@ -2430,22 +3569,22 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : login attempt failed: please try again}\n  (Session info: chrome\u003d127.0.6533.89): login attempt failed: please try again\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.23\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [11a02683f33cc7f2a63f3067f3c13145, getTitle {}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\\Users\\Admin\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58726}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58726/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 11a02683f33cc7f2a63f3067f3c13145\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:307)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$1.apply(ExpectedConditions.java:55)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$1.apply(ExpectedConditions.java:50)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)\r\n\tat com.revature.step.LoginSteps.the_user_should_be_logged_in_successfully_and_redirected_to_homepage(LoginSteps.java:56)\r\n\tat com.revature.step.LoginSteps.the_user_is_logged_in_to_the_planetarium(LoginSteps.java:74)\r\n\tat ✽.The user is logged in to the planetarium(classpath:features/RemovePlanets.feature:30)\r\n",
-              "duration": 678950400,
-              "status": "failed"
+              "duration": 343466400,
+              "status": "passed"
             },
-            "line": 30,
-            "name": "The user is logged in to the planetarium",
+            "line": 26,
+            "name": "The user is logged in",
             "match": {
-              "location": "com.revature.step.LoginSteps.the_user_is_logged_in_to_the_planetarium()"
+              "location": "com.revature.step.AddMoonSteps.the_user_is_logged_in()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 337425800,
+              "status": "passed"
             },
-            "line": 31,
+            "line": 27,
             "name": "The user selects Planet from the drop down menu",
             "match": {
               "location": "com.revature.step.AddPlanetSteps.the_user_selects_Planet_from_the_drop_down_menu()"
@@ -2454,9 +3593,10 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 113834300,
+              "status": "passed"
             },
-            "line": 32,
+            "line": 28,
             "name": "The user provides a planet name: \"Mercury\"",
             "match": {
               "arguments": [
@@ -2471,9 +3611,10 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 58654000,
+              "status": "passed"
             },
-            "line": 33,
+            "line": 29,
             "name": "The user clicks the Delete button",
             "match": {
               "location": "com.revature.step.RemovePlanetSteps.theUserClicksTheDeleteButton()"
@@ -2482,9 +3623,10 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 567557700,
+              "status": "passed"
             },
-            "line": 34,
+            "line": 30,
             "name": "The planet should fail to be deleted",
             "match": {
               "location": "com.revature.step.RemovePlanetSteps.thePlanetShouldFailToBeDeleted()"
@@ -2525,7 +3667,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-08-07T20:28:37.642Z",
+        "start_timestamp": "2024-08-12T15:25:26.335Z",
         "line": 11,
         "name": "Positive scenario view celestial bodies",
         "description": "",
@@ -2535,7 +3677,7 @@
         "steps": [
           {
             "result": {
-              "duration": 182789600,
+              "duration": 357001600,
               "status": "passed"
             },
             "line": 6,
@@ -2557,9 +3699,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : login attempt failed: please try again}\n  (Session info: chrome\u003d127.0.6533.89): login attempt failed: please try again\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.23\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [11a02683f33cc7f2a63f3067f3c13145, findElement {value\u003dbody \u003e div:nth-child(3), using\u003dcss selector}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\\Users\\Admin\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58726}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58726/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 11a02683f33cc7f2a63f3067f3c13145\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)\r\n\tat com.revature.step.ViewCelestialBodiesSteps.the_user_should_view_celestial_bodies_page(ViewCelestialBodiesSteps.java:43)\r\n\tat ✽.The user should view celestial bodies page(classpath:features/ViewCelestialBodies.feature:7)\r\n",
-              "duration": 7042600,
-              "status": "failed"
+              "duration": 295849300,
+              "status": "passed"
             },
             "line": 7,
             "name": "The user should view celestial bodies page",
@@ -2582,7 +3723,7 @@
         ]
       },
       {
-        "start_timestamp": "2024-08-07T20:28:37.838Z",
+        "start_timestamp": "2024-08-12T15:25:26.994Z",
         "line": 14,
         "name": "Negative Scenario unauthenticated user",
         "description": "",
@@ -2592,9 +3733,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : login attempt failed: please try again}\n  (Session info: chrome\u003d127.0.6533.89): login attempt failed: please try again\nBuild info: version: \u00274.23.0\u0027, revision: \u00274df0a231af\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.23\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [11a02683f33cc7f2a63f3067f3c13145, findElement {value\u003d/html/body/button, using\u003dxpath}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\\Users\\Admin\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58726}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58726/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 11a02683f33cc7f2a63f3067f3c13145\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy15.click(Unknown Source)\r\n\tat com.revature.pom.HomePage.clickLogout(HomePage.java:121)\r\n\tat com.revature.step.ViewCelestialBodiesSteps.the_user_is_not_logged_in(ViewCelestialBodiesSteps.java:28)\r\n\tat ✽.The user is not logged in(classpath:features/ViewCelestialBodies.feature:15)\r\n",
-              "duration": 5349100,
-              "status": "failed"
+              "duration": 157696000,
+              "status": "passed"
             },
             "line": 15,
             "name": "The user is not logged in",
@@ -2605,7 +3745,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 46025300,
+              "status": "passed"
             },
             "line": 16,
             "name": "The user should not view celestial bodies page",
